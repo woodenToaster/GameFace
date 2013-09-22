@@ -4,3 +4,18 @@
 	font-family: Arial;
 	font-size: 12px;
 }
+
+.headerMenu {
+	background-color: #00B9#D;
+	height: 38px;
+	border-bottom: 0px;
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	
+}
