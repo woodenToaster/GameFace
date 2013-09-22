@@ -6,7 +6,7 @@
 }
 
 .headerMenu {
-	background-color: #00B9#D;
+	background-color: #00B9ED;
 	height: 38px;
 	border-bottom: 0px;
 	padding-left: auto;
@@ -17,5 +17,20 @@
 #wrapper {
 	margin-left: auto;
 	margin-right: auto;
-	
+	width: 1000px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.logo {
+	width: 125px;
+}
+
+.logo img {
+	width: 150px;
+	height: 38px;
+}
+
+.logo:hover {
+	background-color: #A9E2F3;
 }
