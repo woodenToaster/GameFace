@@ -32,11 +32,15 @@
 }
 
 .search_box {
-	background-image:url();
-	position:absolute; top:25px;
+	background: white url(../img/search_icon.png) left no-repeat;
+	position:absolute; top:14px;
 	margin-left: 160px;
+	padding-left: 14px;
 }
 
 #search input[type="text"] {
+	background: url('../img/search_icon.png') no-repeat 10px 6px #FFFFF;
+	outline: none;
+	border: 0 none;
 	
 }
