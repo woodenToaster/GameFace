@@ -23,7 +23,7 @@
 }
 
 .logo {
-	width: 125px;
+	width: 150px;
 }
 
 .logo img {
@@ -31,6 +31,12 @@
 	height: 38px;
 }
 
-.logo:hover {
-	background-color: #A9E2F3;
+.search_box {
+	background-image:url();
+	position:absolute; top:25px;
+	margin-left: 160px;
+}
+
+#search input[type="text"] {
+	
 }
