@@ -1,5 +1,5 @@
-EECS_448_Project
-================
+GameFace: The Social Network for Gamers
+=======================================
 
 GameFace is an all KU, all gaming social network.  
 * Discuss your favorite games in the forums 
