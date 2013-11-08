@@ -86,3 +86,11 @@ body {
 	border-bottom:1px solid #CCC;
 }
 
+#headings h2 {
+	color:#FFFF00;
+	display:inline;
+	text-align:center;
+	padding-left:45px;
+	padding-right:250px;
+
+}
