@@ -6,7 +6,7 @@ body {
 }
 
 #wrapper {
-	width:960px;
+	width:auto;
 	background-color:#FF8899;
 	margin:0 auto;
 	width: 1000px;
@@ -15,8 +15,9 @@ body {
 }
 
 #header {
-	width:960px;
-	height:135px;
+	color:#FFFFFF;
+	width:auto;
+	height:10%;
 	margin:0 auto;
 	margin-bottom:25px;
 	border-bottom:1px solid #CCC;
@@ -24,7 +25,8 @@ body {
 }
 
 #nav {
-	width:960px;
+	color:#FFFFFF;
+	width:auto;
 	height:40px;
 	border-bottom:1px solid #CCC;
 }
@@ -41,21 +43,25 @@ body {
 	height:80px;
 }
 #content {
-	width:675px;
+	color:#FFFFFF;
+	width:80%;
+	height:80%;
 	float:right;
 	padding:10px;
 }
 
 #sidebar {
-	width:200px;
+	color:#FFFFFF;
+	width:20%;
 	float:left;
 	padding:10px;
 }
 
 #footer {
+	color:#FFFFFF;
 	clear:both;
-	width:960px;
-	height:135px;
+	width:auto;
+	height:5%;
 	border-top:1px solid #CCC;
 }
 
