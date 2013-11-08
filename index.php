@@ -6,23 +6,14 @@
     <body>
 		<div id="wrapper">
 			<?php include_once('php_includes/header.php'); ?>
-			<div id="nav">
-				<a href="#">Home</a>
-				<a href="#">Edit Account</a>
-				<a href="#">My Profile</a>
-				<a href="#">Sign Out</a>
-			</div>
+			<?php include_once('php_includes/nav.php'); ?>
 			<div id="view">
-				<div id ="sidebar">
-					<p>Sidebar</p>
-				</div>
+				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
 					<p>Feed</p>
 				</div>
 			</div>
-			<div id="footer">
-				<p>About</p>
-			</div>
+			<?php include_once('php_includes/footer.php'); ?>
 		</div>
     </body>
 </html>
