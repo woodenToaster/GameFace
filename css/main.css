@@ -15,9 +15,11 @@ body {
 #header {
 	color:#FFFFFF;
 	width:auto;
-	height:10%;
+	height:50px;
 	border-bottom:1px solid #CCC;
 	border-top:1px solid #CCC;
+	margin:0px;
+	padding-top:10px;
 }
 
 #nav {
@@ -27,6 +29,8 @@ body {
 	margin-right:auto;
 	height:20px;
 	border-bottom:1px solid #CCC;
+	margin:0px;
+	padding-top:0px;
 }
 
 #nav a {
@@ -38,9 +42,9 @@ body {
 #nav a:hover {
 	background-color:#bababa;
 }
+
 #view {
 	height:80%;
-	
 	border:2px solid #CCC;
 	margin:0px;
 	padding:0px;
@@ -59,15 +63,13 @@ body {
 	width:84%;
 	float:right;
 	height:100%;
-	
 }
-
-
 
 #footer {
 	color:#FFFFFF;
 	clear:both;
 	height:5%;
 	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
 }
 
