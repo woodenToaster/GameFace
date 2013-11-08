@@ -1,15 +1,12 @@
 body {
-	background-color:#000000;
-	font-family:Arial;
-	margin:0;
-	padding:0;
+	background:url('../img/bgImg.png');
 }
 
 #wrapper {
-	width:auto;
-	background-color:#FF8899;
-	margin:0 auto;
-	width: 1000px;
+	width:70%;
+	background-color:#000000;
+	margin-left:auto;
+	margin-right:auto;
 	border-left:1px solid #CCC;
 	border-right:1px solid #CCC;
 }
@@ -18,7 +15,7 @@ body {
 	color:#FFFFFF;
 	width:auto;
 	height:10%;
-	margin:0 auto;
+	
 	margin-bottom:25px;
 	border-bottom:1px solid #CCC;
 	border-top:1px solid #CCC;
@@ -27,7 +24,9 @@ body {
 #nav {
 	color:#FFFFFF;
 	width:auto;
-	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	height:20px;
 	border-bottom:1px solid #CCC;
 }
 
@@ -42,10 +41,15 @@ body {
 	background-color:#bababa;
 	height:80px;
 }
+#view {
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
 #content {
 	color:#FFFFFF;
 	width:80%;
-	height:80%;
+	height:65%;
 	float:right;
 	padding:10px;
 }
@@ -55,12 +59,12 @@ body {
 	width:20%;
 	float:left;
 	padding:10px;
+	border-right:1px solid #CCC;
 }
 
 #footer {
 	color:#FFFFFF;
 	clear:both;
-	width:auto;
 	height:5%;
 	border-top:1px solid #CCC;
 }
