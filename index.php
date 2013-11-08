@@ -5,14 +5,12 @@
     </head>
     <body>
 		<div id="wrapper">
-			<div id="header">
-				<img src="img/GameFaceLogo.png" id="logo">
-			</div>
+			<?php include_once('php_includes/header.php'); ?>
 			<div id="nav">
-				<a href=#>Home</a>
-				<a href=#>Edit Account</a>
-				<a href=#>My Profile</a>
-				<a href=#>Sign Out</a>
+				<a href="#">Home</a>
+				<a href="#">Edit Account</a>
+				<a href="#">My Profile</a>
+				<a href="#">Sign Out</a>
 			</div>
 			<div id="view">
 				<div id ="sidebar">
