@@ -20,6 +20,7 @@ body {
 	top:0px;
 	left:0px;
 	color:#FFFFFF;
+	background-color:#000000;
 	width:100%;
 	height:75px;
 	border-bottom:1px solid #CCC;
@@ -30,6 +31,7 @@ body {
 }
 
 #nav {
+	background-color:#000000;
 	position:absolute;
 	top:76px;
 	left:0px;
@@ -37,8 +39,6 @@ body {
 	width:100%;
 	height:33px;
 	border-bottom:1px solid #CCC;
-	
-	
 }
 
 #nav a {
@@ -78,7 +78,7 @@ body {
 }
 
 #footer {
-
+	background-color:#000000;
 	color:#FFFFFF;
 	clear:both;
 	height:5%;
@@ -86,11 +86,21 @@ body {
 	border-bottom:1px solid #CCC;
 }
 
-#headings h2 {
-	color:#FFFF00;
-	display:inline;
-	text-align:center;
-	padding-left:45px;
-	padding-right:250px;
+#signup {
+	float:left;
+	padding-left:75px;
+	color:#FFFFFF;
+}
 
+#info {
+	float:right;
+	padding-right:75px;
+	color:#FFFFFF;
+}
+#signup h2 {
+	color:#FFFF00;
+}
+
+#info h2 {
+	color:#FFFF00;
 }
