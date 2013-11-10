@@ -39,7 +39,6 @@
 			</ul>
 		</div>
 	</div>
-	<?php include_once("php_includes/footer.php"); //dsfsdfsdfs
-	?>
+	<?php include_once("php_includes/footer.php"); ?>
 </body>
 </html>
