@@ -5,8 +5,8 @@
 	<title>GameFace: Sign up</title>
 </head>
 <body>
-	<?php include_once("php_includes/header.php"); ?>
-	<div id="wrapper">
+	<div id="wrapper2">
+		<?php include_once("php_includes/header.php"); ?>	
 		<div id="signup">
 			<h2>Sign Up For Free Now!</h2>
 			<form action="addUser.php" method="POST">
