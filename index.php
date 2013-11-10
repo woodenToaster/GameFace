@@ -1,7 +1,7 @@
 <html>
     <head>
         <link href="css/main.css" rel="stylesheet" type="text/css">
-        <title>EECS 448 Project</title>
+        <title>GameFace</title>
     </head>
     <body>
 		<div id="wrapper">
