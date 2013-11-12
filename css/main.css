@@ -6,7 +6,9 @@ body {
 	background:url("../img/background.png");
 //	background: -moz-linear-gradient(#101010,white);
 //	background: -webkit-linear-gradient(#101010,white);
-	overflow-y: scroll;	
+	overflow-y: scroll;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11pt;
 }
 
 
