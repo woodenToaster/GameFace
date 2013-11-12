@@ -3,6 +3,12 @@
 <head>
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<title>GameFace: Sign up</title>
+	<style type="text/css">
+	  body{
+	    background: -moz-linear-gradient(black,white);
+	    background: -webkit-linear-gradient(black,white);
+	  }
+	</style>
 </head>
 <body>
 	<div id="wrapper2">

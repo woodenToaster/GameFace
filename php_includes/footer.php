@@ -1,3 +1,3 @@
 <div id="footer">
-	<p>About</p>
+	<a href="#">About</a>
 </div>
