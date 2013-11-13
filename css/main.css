@@ -40,7 +40,7 @@ body {
 }
 
 #wrapper2 {
-	width:70%;
+	width:1350px;
 	height:auto;
 	margin-left:auto;
 	margin-right:auto;
@@ -146,7 +146,7 @@ body {
 
 #signup {
 	float:left;
-	padding: 10px 75px 30px 75px;
+	padding: 10px 75px 10px 75px;
 //	padding-left:75px;
 //	padding-right: 75px;
 	color:#FFFFFF;
