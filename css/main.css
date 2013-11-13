@@ -8,7 +8,7 @@ body {
 //	background: -webkit-linear-gradient(#101010,white);
 	overflow-y: scroll;
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 11pt;
+	font-size: 10pt;
 }
 
 
@@ -40,7 +40,7 @@ body {
 }
 
 #wrapper2 {
-	width:1350px;
+	width:1000px;
 	height:auto;
 	margin-left:auto;
 	margin-right:auto;
@@ -152,13 +152,14 @@ body {
 	color:#FFFFFF;
 	background-color:#000000;
 	border-radius: 50px;
+	font-size: 10pt;
 }
 
 #info {
 	float:right;
-	padding-right:75px;
+//	padding-right:75px;
 	color:#FFFFFF;
-	font-size: 15pt;
+	font-size: 10pt;
 }
 #signup h2 {
 	color:#FFFF00;
@@ -166,5 +167,4 @@ body {
 
 #info h2 {
 	color:#FFFF00;
-	font-size: 30pt;
 }
