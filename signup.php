@@ -9,6 +9,71 @@
 	    background: -webkit-linear-gradient(black,white);
 	  }
 	</style>
+	<?php
+		error_reporting(E_ALL);
+		ini_set( 'display_errors','1'); 
+		global $fnameErr, $lnameErr, $emailErr, $email2Err;
+		if (!empty($_POST))
+		{
+			$err = false;
+			
+			if(empty($_POST['fname']))
+			{
+				$fnameErr = "First name is required";
+				$err = true;
+			}
+			
+			if(empty($_POST['lname']))
+			{
+				$lnameErr = "Last name is required";
+				$err = true;
+			}
+			
+			if(empty($_POST['phone']))
+			{
+				$phoneErr = "Phone number is required";
+				$err = true;
+			}
+			
+			if(empty($_POST['email']))
+			{
+				$emailErr = "Email is required";
+				$err = true;
+			}
+			
+			if($_POST['email'] != $_POST['email2']) {
+				
+				$email2Err = "Emails don't match";
+				$err = true;
+			}
+			
+			$hostname = "mysql.eecs.ku.edu";
+			$user = "chogan";
+			$pw = "GameFace";
+			$db = "chogan";
+			
+			if ($err == false)
+			{
+				$c = mysqli_connect($hostname, $user, $pw, $db);
+				if (mysqli_connect_errno($c))
+				{
+					echo "Failed to connect to MySQL: " . mysqli_connect_error();
+				}
+				
+				$x = "INSERT INTO 448Lab (Fname, Lname, Address, Phone, Email, Message, Birthday)
+					  VALUES ('$_POST[firstname]', '$_POST[lastname]', '$_POST[address]',
+							  '$_POST[phone]', '$_POST[email]', '$_POST[message]', '$_POST[dob]')";
+							  
+				if(!mysqli_query($c, $x))
+				{
+					die('Error: ' . mysqli_error($c));
+				}
+				
+				echo "Info submitted.  Thanks!";
+				mysqli_close($c);
+			}
+		}	
+		?>
 </head>
 <body>
 	<div id="wrapper2">
@@ -26,8 +91,8 @@
 				3. <input type="text" name="game3"><br>
 				4. <input type="text" name="game4"><br>
 				5. <input type="text" name="game5"><br>
-				First Name: <input type="text" name="fname"><br>
-				Last Name: <input type="text" name="lname"><br>
+				First Name: <input type="text" name="fname"><?php echo $fnameErr;?><br>
+				Last Name: <input type="text" name="lname"><?php echo $lnameErr;?><br>
 				School Year: <input type="text" name="year"><br>
 				Major: <input type="text" name="major"><br>
 				<input type="submit" name="Sign Up"><br>
