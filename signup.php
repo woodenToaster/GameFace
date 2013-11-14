@@ -18,7 +18,7 @@
 			<form action="addUser.php" method="POST">
 				Email: <input type="text" name="email"><br>
 				Re-Enter Email: <input type="text" name="email2"><br>
-				Password: <input type="text" name="pw"><br>
+				Password: <input type="password" name="pw"><br>
 				Re-Enter Password: <input type="text" name="pw2"><br>
 				Top Five Games<br>
 				1. <input type="text" name="game1"><br>
