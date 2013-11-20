@@ -40,7 +40,7 @@ body {
 }
 
 #wrapper2 {
-	width:1000px;
+	width:90%;
 	height:auto;
 	margin-left:auto;
 	margin-right:auto;
@@ -146,11 +146,34 @@ body {
 
 #signup {
 	float:left;
-	padding: 5px 75px 5px 25px;
+	padding: 5px 25px 5px 25px;
+	width:500px;
 	color:#FFFFFF;
 	background-color:#000000;
 	border-radius: 50px;
 	font-size: 10pt;
+}
+
+/**** On successful sign up ****/
+
+#success {
+	text-align:center;
+	color:#FFFF00;
+}
+
+#success a:link a:visited {
+	color:#FFFF00
+}
+
+#success a:visited {
+	color:#FFFF00;
+}
+#success a:hover {
+	color:#FFFFFF
+}
+
+input {
+	width:200px;
 }
 
 #info {
