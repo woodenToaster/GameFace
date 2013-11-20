@@ -12,7 +12,7 @@
 	<?php
 		error_reporting(E_ALL);
 		ini_set( 'display_errors','1'); 
-		global $fnameErr, $lnameErr, $emailErr, $email2Err;
+		global $fnameErr, $lnameErr, $emailErr, $email2Err, $unameErr, $pwErr;
 		if (!empty($_POST))
 		{
 			$err = false;
@@ -29,15 +29,27 @@
 				$err = true;
 			}
 			
-			if(empty($_POST['phone']))
+			if($_POST['pw'] != $_POST['pw2'])
 			{
-				$phoneErr = "Phone number is required";
+				$pwErr = "Passwords don't match";
 				$err = true;
 			}
 			
 			if(empty($_POST['email']))
 			{
 				$emailErr = "Email is required";
+				$err = true;
+			}
+			
+			if(empty($_POST['pw']))
+			{
+				$pwErr = "Password required";
+				$err = true;
+			}
+			
+			if(empty($_POST['username']))
+			{
+				$unameErr = "Username required";
 				$err = true;
 			}
 			
@@ -60,16 +72,15 @@
 					echo "Failed to connect to MySQL: " . mysqli_connect_error();
 				}
 				
-				$x = "INSERT INTO 448Lab (Fname, Lname, Address, Phone, Email, Message, Birthday)
-					  VALUES ('$_POST[firstname]', '$_POST[lastname]', '$_POST[address]',
-							  '$_POST[phone]', '$_POST[email]', '$_POST[message]', '$_POST[dob]')";
+				$x = "INSERT INTO Accounts (username, email, password, firstName, lastName, major, year)
+					  VALUES ('$_POST[username]', '$_POST[email]', '$_POST[pw]',
+							  '$_POST[fname]', '$_POST[lname]', '$_POST[year]', '$_POST[major]')";
 							  
 				if(!mysqli_query($c, $x))
 				{
 					die('Error: ' . mysqli_error($c));
 				}
 				
-				echo "Info submitted.  Thanks!";
 				mysqli_close($c);
 			}
 		}	
@@ -80,22 +91,26 @@
 		<?php include_once("php_includes/header.php"); ?>	
 		<div id="signup">
 			<h2>Sign Up For Free Now!</h2>
-			<form action="addUser.php" method="POST">
-				Email: <input type="text" name="email"><br>
-				Re-Enter Email: <input type="text" name="email2"><br>
-				Password: <input type="password" name="pw"><br>
-				Re-Enter Password: <input type="password" name="pw2"><br>
-				Top Five Games<br>
-				1. <input type="text" name="game1"><br>
-				2. <input type="text" name="game2"><br>
-				3. <input type="text" name="game3"><br>
-				4. <input type="text" name="game4"><br>
-				5. <input type="text" name="game5"><br>
-				First Name: <input type="text" name="fname"><?php echo $fnameErr;?><br>
-				Last Name: <input type="text" name="lname"><?php echo $lnameErr;?><br>
-				School Year: <input type="text" name="year"><br>
-				Major: <input type="text" name="major"><br>
-				<input type="submit" name="Sign Up"><br>
+			<form action="signup.php" method="POST">
+				<table>
+					<tr><td>Username:</td> <td><input type="text" name="username"><?php echo $unameErr;?></td></tr>
+					<tr><td>Email:</td> <td><input type="text" name="email"><?php echo $emailErr;?></td></tr>
+					<tr><td>Re-Enter Email:</td> <td><input type="text" name="email2"><?php echo $email2Err;?></td></tr>
+					<tr><td>Password:</td> <td><input type="password" name="pw"></td></tr>
+					<tr><td>Re-Enter Password:</td> <td><input type="password" name="pw2"><?php echo $pwErr;?></td></tr>
+					<tr><td>Top Five Games</td></td></tr>
+					<tr><td>1.</td> <td><input type="text" name="game1"></td></tr>
+					<tr><td>2.</td> <td><input type="text" name="game2"></td></tr>
+					<tr><td>3.</td> <td><input type="text" name="game3"></td></tr>
+					<tr><td>4.</td> <td><input type="text" name="game4"></td></tr>
+					<tr><td>5.</td> <td><input type="text" name="game5"></td></tr>
+					<tr><td>First Name:</td> <td><input type="text" name="fname"><?php echo $fnameErr;?></td></tr>
+					<tr><td>Last Name:</td> <td><input type="text" name="lname"><?php echo $lnameErr;?></td></tr>
+					<tr><td>School Year:</td> <td><input type="text" name="year"></td></tr>
+					<tr><td>Major:</td> <td><input type="text" name="major"></td></tr>
+				</table>
+				<input type="submit" name="Sign Up"><tr>
+				
 			</form>
 		</div>
 		<div id="info">

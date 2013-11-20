@@ -146,9 +146,7 @@ body {
 
 #signup {
 	float:left;
-	padding: 10px 75px 10px 75px;
-//	padding-left:75px;
-//	padding-right: 75px;
+	padding: 5px 75px 5px 25px;
 	color:#FFFFFF;
 	background-color:#000000;
 	border-radius: 50px;
@@ -157,7 +155,6 @@ body {
 
 #info {
 	float:right;
-//	padding-right:75px;
 	color:#FFFFFF;
 	font-size: 10pt;
 }
