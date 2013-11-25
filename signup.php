@@ -13,6 +13,7 @@
 		error_reporting(E_ALL);
 		ini_set( 'display_errors','1'); 
 		global $fnameErr, $lnameErr, $emailErr, $email2Err, $unameErr, $pwErr, $top5Err;
+		$fname = $lname = $email = $game1 = $game2 = $game3 = $game4 = $game5 = $year = $major = $uname = "";
 		if (!empty($_POST))
 		{
 			$err = false;
