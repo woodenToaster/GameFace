@@ -4,16 +4,10 @@
         <title>GameFace</title>
     </head>
     <body>
-      <?php
-	 session_start();
-	 if(!isset($_SESSION['username'])){
-	   header("location: signup.php");
-	 }
-
-      ?>
 		<div id="wrapper">
-			<?php include_once('php_includes/header.php'); ?>
-			<?php include_once('php_includes/nav.php'); ?>
+			<?php include_once('php_includes/header.php');
+			      include_once('php_includes/nav.php');
+			      include('php_includes/sessions.php'); ?>
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">

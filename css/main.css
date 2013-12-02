@@ -34,6 +34,7 @@ body {
 	border-radius:50px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top: 10em;
 	bottom:50px;
 	border-left:1px solid #CCC;
 	border-right:1px solid #CCC;
@@ -43,10 +44,11 @@ body {
 	width: 70%;
 	margin-left:auto;
 	margin-right:auto;
+//	padding-right: 0em;
 //	border-left:1px solid #CCC;
 //	border-right:1px solid #CCC;
 	background-color:#000000;
-	margin-top:100px;
+	margin-top: 10em;
 }
 
 #header {
@@ -143,6 +145,19 @@ body {
 	bottom: 0px;
 }
 
+#editProfile{
+	width:50em;
+	background-color:#000000;
+	color: #FFFFFF;
+	border-radius:50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	padding: 10px 0px 10px 30px;
+}
+
 #signup {
 	float:left;
 	width: 37em;
@@ -153,9 +168,8 @@ body {
 	color:#FFFFFF;
 	background-color:#000000;
 	border-radius: 50px;
-	font-size: 10pt;
-
 }
+
 #login {
     float: right;
     padding: 15px;
@@ -185,7 +199,9 @@ body {
 	color:#FFFF00;
 }
 
-
+#editProfile h2 {
+    color: #FFFF00;
+}
 
 #info h2 {
 	color:#FFFF00;

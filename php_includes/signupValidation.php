@@ -1,6 +1,7 @@
 <?php
   error_reporting(E_ALL);
   ini_set( 'display_errors','1');
+  include('connection.php');
 	   
   if(isset($_SESSION['username'])){
     header("location: index.php");
@@ -45,7 +46,7 @@
        else {
          $email = $_POST['email'];
 	 if(!preg_match($emailval, $_POST['email'])){
-	   $emailErr = "*Please enter a valid ku email";
+	   $emailErr = "*Please enter a valid KU email";
 	   $err = true;
 	 }
        }

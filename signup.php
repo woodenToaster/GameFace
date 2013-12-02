@@ -21,7 +21,7 @@
 	<div id="wrapper2"> 	
 		<div id="signup">
 			<h2>Sign Up For Free Now!</h2>
-			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"action="signup.php" method="POST" name="signupForm">
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="POST" name="signupForm">
 				<table id="signupTable">
 					<tr><td>Username:</td> <td><input type="text" name="username" value="<?php echo htmlspecialchars($uname);?>"></td><td><?php echo $unameErr;?></td></tr>
 					<tr><td>Email:</td> <td><input type="text" name="email" value="<?php echo htmlspecialchars($email);?>"></td><td><?php echo $emailErr;?></td></tr>
