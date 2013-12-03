@@ -1,6 +1,6 @@
 body {
 	margin:0px;
-	padding:75px 0px 0px 0px;
+	padding:0px 10em 0px 0px;
 //	overflow:hidden;
 //	background-color: #808080;
 	background:url("../img/background.png");
@@ -34,20 +34,21 @@ body {
 	border-radius:50px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top: 10em;
 	bottom:50px;
 	border-left:1px solid #CCC;
 	border-right:1px solid #CCC;
 }
 
 #wrapper2 {
-	width: 1075px;
-	height:auto;
+	width: 70%;
 	margin-left:auto;
 	margin-right:auto;
+//	padding-right: 0em;
 //	border-left:1px solid #CCC;
 //	border-right:1px solid #CCC;
 	background-color:#000000;
-	margin-top:100px;
+	margin-top: 10em;
 }
 
 #header {
@@ -144,17 +145,32 @@ body {
 	bottom: 0px;
 }
 
+#editProfile{
+	width:50em;
+	background-color:#000000;
+	color: #FFFFFF;
+	border-radius:50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	padding: 10px 0px 10px 30px;
+}
+
 #signup {
 	float:left;
-	padding: 10px 75px 10px 75px;
+	width: 37em;
+	position: relative;
+	padding: 10px 0px 10px 30px;
 //	padding-left:75px;
 //	padding-right: 75px;
 	color:#FFFFFF;
 	background-color:#000000;
 	border-radius: 50px;
-	font-size: 10pt;
 }
-#signin {
+
+#login {
     float: right;
     padding: 15px;
     color: #FFFFFF;
@@ -170,13 +186,21 @@ body {
 
 #info {
 	float:right;
-//	padding-right:75px;
+	width: 50%;
+//	right:200px;
 	color:#FFFFFF;
 	font-size: 10pt;
-//	position:right;
+//	margin:auto;
+	position:absolute;
+	right:0em;
 }
+
 #signup h2 {
 	color:#FFFF00;
+}
+
+#editProfile h2 {
+    color: #FFFF00;
 }
 
 #info h2 {

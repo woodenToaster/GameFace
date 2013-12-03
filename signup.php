@@ -10,6 +10,7 @@
 	  }
 	</style>
 	<?php
+<<<<<<< HEAD
 		error_reporting(E_ALL);
 		ini_set( 'display_errors','1'); 
 		global $fnameErr, $lnameErr, $emailErr, $email2Err, $unameErr, $pwErr, $top5Err;
@@ -144,30 +145,37 @@
 			}
 		}	
 		?>
+=======
+	   include("php_includes/login.php");
+	   include("php_includes/connection.php");
+	   include("php_includes/signupValidation.php");
+	?>
+>>>>>>> Sessions
 </head>
 <body>
-	<div id="wrapper2">
-		<?php include_once("php_includes/header.php"); ?>	
+
+		<?php include_once("php_includes/header.php"); ?>
+	<div id="wrapper2"> 	
 		<div id="signup">
 			<h2>Sign Up For Free Now!</h2>
-			<form action="signup.php" method="POST">
-				<table>
-					<tr><td>Username:</td> <td><input type="text" name="username" value="<?php echo htmlspecialchars($uname);?>"><?php echo $unameErr;?></td></tr>
-					<tr><td>Email:</td> <td><input type="text" name="email" value="<?php echo htmlspecialchars($email);?>"><?php echo $emailErr;?></td></tr>
-					<tr><td>Re-Enter Email:</td> <td><input type="text" name="email2"><?php echo $email2Err;?></td></tr>
-					<tr><td>Password:</td> <td><input type="password" name="pw"></td></tr>
-					<tr><td>Re-Enter Password:</td> <td><input type="password" name="pw2"><?php echo $pwErr;?></td></tr>
-					<tr><td>Top Five Games</td></td></tr>
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="POST" name="signupForm">
+				<table id="signupTable">
+					<tr><td>Username:</td> <td><input type="text" name="username" value="<?php echo htmlspecialchars($uname);?>"></td><td><?php echo $unameErr;?></td></tr>
+					<tr><td>Email:</td> <td><input type="text" name="email" value="<?php echo htmlspecialchars($email);?>"></td><td><?php echo $emailErr;?></td></tr>
+					<tr><td>Re-Enter Email:</td> <td><input type="text" name="email2"></td><td><?php echo $email2Err;?></td></tr>
+					<tr><td>Password:</td> <td><input type="password" name="pw"></td><td><?php echo $pwErr;?></td></tr>
+					<tr><td>Re-Enter Password:</td> <td><input type="password" name="pw2"></td></tr>
+					<tr><td>Top Five Games</td><td><?php echo $top5Err;?></td></tr>
 					<tr><td>1.</td> <td><input type="text" name="game1" value="<?php echo htmlspecialchars($game1);?>"></td></tr>
 					<tr><td>2.</td> <td><input type="text" name="game2" value="<?php echo htmlspecialchars($game2);?>"></td></tr>
-					<tr><td>3.</td> <td><input type="text" name="game3" value="<?php echo htmlspecialchars($game3);?>"><?php echo $top5Err;?></td></tr>
+					<tr><td>3.</td> <td><input type="text" name="game3" value="<?php echo htmlspecialchars($game3);?>"></td></td></tr>
 					<tr><td>4.</td> <td><input type="text" name="game4" value="<?php echo htmlspecialchars($game4);?>"></td></tr>
 					<tr><td>5.</td> <td><input type="text" name="game5" value="<?php echo htmlspecialchars($game5);?>"></td></tr>
-					<tr><td>First Name:</td> <td><input type="text" name="fname" value="<?php echo htmlspecialchars($fname);?>"><?php echo $fnameErr;?></td></tr>
-					<tr><td>Last Name:</td> <td><input type="text" name="lname" value="<?php echo htmlspecialchars($lname);?>"><?php echo $lnameErr;?></td></tr>
+					<tr><td>First Name:</td> <td><input type="text" name="fname" value="<?php echo htmlspecialchars($fname);?>"></td><td><?php echo $fnameErr;?></td></tr>
+					<tr><td>Last Name:</td> <td><input type="text" name="lname" value="<?php echo htmlspecialchars($lname);?>"></td><td><?php echo $lnameErr;?></td></tr>
 					<tr><td>School Year:</td> <td><input type="text" name="year" value="<?php echo htmlspecialchars($year);?>"></td></tr>
 					<tr><td>Major:</td> <td><input type="text" name="major" value="<?php echo htmlspecialchars($major);?>"></td></tr>
-					<tr><td></td><td><input type="submit" value="Sign Up"></td></tr>
+					<tr><td></td><td><input type="submit" value="Sign Up" name="signupsubmit"></td></tr>
 				</table>
 			</form>
 		</div>
@@ -182,7 +190,7 @@
 				<li>Create events, invite friends, profit!</li>
 			</ul>
 		</div>
-	</div>
+        </div>
 	<?php include_once("php_includes/footer.php"); ?>
 </body>
 </html>
