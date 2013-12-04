@@ -1,6 +1,6 @@
 <?php
   include('connection.php');
-
+  
   $username = $_SESSION['username'];
 
   $emailErr = $pwErr = "";

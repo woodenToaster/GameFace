@@ -1,5 +1,5 @@
 <?php
-
+  session_start();
   $loginErr = "";
 
   if(isset($_POST['loginsubmit'])){
