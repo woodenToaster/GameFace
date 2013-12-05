@@ -12,6 +12,8 @@
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
 					<p>Feed</p>
+					<div id="notifications"></div>
+					<div id="suggestions"></div>
 				</div>
 			</div>
 		</div>
