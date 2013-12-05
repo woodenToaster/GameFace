@@ -1,15 +1,20 @@
 <html>
     <head>
+		<?php 
+			include_once('php_includes/header.php');
+			include_once('php_includes/nav.php');
+			include('php_includes/sessions.php'); 
+		?>
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <title>GameFace: Home</title>
+		<script type="text/javascript" src="js/ajax.js"></script>
+		<script type="text/javascript" src="js/displayNotifications.js">
+			var user = <?php echo $_SESSION['username']; ?>;
+		</script>
     </head>
     <body>
 		<div id="wrapper">
-			<?php 
-				include_once('php_includes/header.php');
-				include_once('php_includes/nav.php');
-				include('php_includes/sessions.php'); 
-			?>
+			
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
