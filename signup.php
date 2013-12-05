@@ -10,151 +10,15 @@
 	  }
 	</style>
 	<?php
-<<<<<<< HEAD
-		error_reporting(E_ALL);
-		ini_set( 'display_errors','1'); 
-		global $fnameErr, $lnameErr, $emailErr, $email2Err, $unameErr, $pwErr, $top5Err;
-		$fname = $lname = $email = $game1 = $game2 = $game3 = $game4 = $game5 = $year = $major = $uname = "";
-		if (!empty($_POST))
-		{
-			$err = false;
-			
-			$year = $_POST['year'];
-			$major = $_POST['major'];
-			
-			if(empty($_POST['fname']))
-			{
-				$fnameErr = "First name is required";
-				$err = true;
-			}
-			else{
-				$fname = $_POST['fname'];
-			}
-			
-			if(empty($_POST['lname']))
-			{
-				$lnameErr = "Last name is required";
-				$err = true;
-			}
-			else{
-				$lname = $_POST['lname'];
-			}
-			
-			if($_POST['pw'] != $_POST['pw2'])
-			{
-				$pwErr = "Passwords don't match";
-				$err = true;
-			}
-			
-			if(empty($_POST['email']))
-			{
-				$emailErr = "Email is required";
-				$err = true;
-			}
-			else
-			{
-				$email = $_POST['email'];
-				if(filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false){
-					$emailErr = "Email is invalid";
-					$err = true;
-				}
-			}
-			
-			if(empty($_POST['pw']))
-			{
-				$pwErr = "Password required";
-				$err = true;
-			}
-			
-			if(empty($_POST['username']))
-			{
-				$unameErr = "Username required";
-				$err = true;
-			}
-			else{
-				$uname = $_POST['username'];
-			}
-			
-			if(empty($_POST['game1']) || empty($_POST['game2']) || empty($_POST['game3']) ||
-				     empty($_POST['game4']) || empty($_POST['game5']))
-			{
-				$top5Err = "Top 5 required";
-				$err = true;
-			}
-			else{
-				$game1 = $_POST['game1'];
-				$game2 = $_POST['game2'];
-				$game3 = $_POST['game3'];
-				$game4 = $_POST['game4'];
-				$game5 = $_POST['game5'];
-			}
-			
-			if($_POST['email'] != $_POST['email2']) {
-				
-				$email2Err = "Emails don't match";
-				$err = true;
-			}
-			
-			$hostname = "mysql.eecs.ku.edu";
-			$user = "chogan";
-			$pw = "GameFace";
-			$db = "chogan";
-			
-			if ($err == false)
-			{
-				$c = mysqli_connect($hostname, $user, $pw, $db);
-				if (mysqli_connect_errno($c))
-				{
-					echo "Failed to connect to MySQL: " . mysqli_connect_error();
-				}
-				
-				$x = "INSERT INTO Accounts (username, 
-											email, 
-											password, 
-											firstName, 
-											lastName,
-											game1, 
-											game2, 
-											game3, 
-											game4, 
-											game5, 
-											major, 
-											year)
-											
-					  VALUES ('$_POST[username]', 
-							  '$_POST[email]', 
-							  '$_POST[pw]',
-							  '$_POST[fname]',
-							  '$_POST[lname]',
-							  '$_POST[game1]',
-							  '$_POST[game2]',
-							  '$_POST[game3]',
-							  '$_POST[game4]',
-							  '$_POST[game5]',
-							  '$_POST[major]',
-							  '$_POST[year]')";
-							  
-				if(!mysqli_query($c, $x))
-				{
-					die('Error: ' . mysqli_error($c));
-				}
-				
-				mysqli_close($c);
-				$url = "http://people.eecs.ku.edu/~chogan/448_Project/success.html";
-				header("Location: $url");
-			}
-		}	
-		?>
-=======
+
 	   include("php_includes/login.php");
 	   include("php_includes/connection.php");
 	   include("php_includes/signupValidation.php");
 	?>
->>>>>>> Sessions
 </head>
 <body>
 
-		<?php include_once("php_includes/header.php"); ?>
+	<?php include_once("php_includes/header.php"); ?>
 	<div id="wrapper2"> 	
 		<div id="signup">
 			<h2>Sign Up For Free Now!</h2>
