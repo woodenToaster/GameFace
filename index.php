@@ -7,8 +7,8 @@
 		<div id="wrapper">
 			<?php 
 				include_once('php_includes/header.php');
-			    include_once('php_includes/nav.php');
-			    include('php_includes/sessions.php'); 
+				include_once('php_includes/nav.php');
+				include('php_includes/sessions.php'); 
 			?>
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
