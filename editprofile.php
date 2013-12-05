@@ -15,7 +15,7 @@
     <br>
       <h2>Edit Your Profile</h2>
       <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" name="editaccForm"> 
-	<table width="100%">
+	<table width="50%" align="center">
 	  <tr>
 	    <td>Email:</td>
 	    <td> <?php echo $email ?></td>
