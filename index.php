@@ -1,17 +1,18 @@
 <html>
     <head>
         <link href="css/main.css" rel="stylesheet" type="text/css">
-        <title>GameFace</title>
+        <title>GameFace: Home</title>
     </head>
     <body>
 		<div id="wrapper">
-			<?php include_once('php_includes/header.php');
-			      include_once('php_includes/nav.php');
-			      include('php_includes/sessions.php'); ?>
+			<?php 
+				include_once('php_includes/header.php');
+			    include_once('php_includes/nav.php');
+			    include('php_includes/sessions.php'); 
+			?>
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
-					<p>Feed</p>
 					<div id="notifications"></div>
 					<div id="suggestions"></div>
 				</div>
