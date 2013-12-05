@@ -10,7 +10,6 @@
 	  }
 	</style>
 	<?php
-
 	   include("php_includes/login.php");
 	   include("php_includes/connection.php");
 	   include("php_includes/signupValidation.php");
