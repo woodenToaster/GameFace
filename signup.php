@@ -17,7 +17,7 @@
 </head>
 <body>
 
-		<?php include_once("php_includes/header.php"); ?>
+	<?php include_once("php_includes/header.php"); ?>
 	<div id="wrapper2"> 	
 		<div id="signup">
 			<h2>Sign Up For Free Now!</h2>
