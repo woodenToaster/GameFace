@@ -18,6 +18,7 @@
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
+				
 					<div id="notifications"></div>
 					<div id="suggestions"></div>
 				</div>
