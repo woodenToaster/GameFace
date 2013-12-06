@@ -8,9 +8,8 @@
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <title>GameFace: Home</title>
 		<script type="text/javascript" src="js/ajax.js"></script>
-		<script type="text/javascript" src="js/displayNotifications.js">
-			var user = <?php echo $_SESSION['username']; ?>;
-		</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/displayNotifications.js"></script>
     </head>
     <body>
 		<div id="wrapper">

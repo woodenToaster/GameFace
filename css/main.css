@@ -149,7 +149,7 @@ body {
 }
 
 #sidebar {
-	color:#000000;
+	color:#FFFFFF;
 	width:15%;
 	height:100%;
 	float:left;
@@ -157,7 +157,7 @@ body {
 }
 
 #content {
-	color:#000000;
+	color:#FFFFFF;
 	width:84%;
 	float:right;
 	height:100%;
@@ -246,6 +246,11 @@ body {
 	color:#FFFF00;
 //	font-size: 15pt;
 }
+
+#notifications {
+	color:#FFFF00;
+}
+
 
 /**** On successful sign up ****/
 
