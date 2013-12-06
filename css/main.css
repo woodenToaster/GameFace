@@ -156,6 +156,30 @@ body {
 	border-right:1px solid #CCC;
 }
 
+#sidebarLinks {
+	margin-left:40px;
+	margin-right:40px;
+	width:auto;
+	list-style-type:none;
+	padding:3px;
+}
+
+#sidebarLinks a:link,
+#sidebarLinks a:visited {
+	display:block;
+	width:120px;
+	font-weight:bold;
+	color:#FFFF00;
+	background-color:#505050;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+#sidebarLinks a:hover {
+	background-color:#888888;
+}
+
 #content {
 	color:#FFFFFF;
 	width:84%;
