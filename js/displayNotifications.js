@@ -8,14 +8,17 @@ function displayNotifications() {
 		dataType: "json"
 	});
 	request.done(function(data) {
-		$('#notifications').prepend(
-			"<div class='notification'>" + data[0].fromUser + " has invited you to the event <a href='#'>"
-			+ data[0].text + "</a></div>");
+		$('#notifications').prepend(data);
+		/*
+			$('#notifications').prepend(
+				"<div class='notification'>" + data[0].fromUser + " has invited you to the event <a href='#'>"
+				+ data[0].text + "</a></div>");
+		*/
 	});
 }
 
-
-$(setInterval(function(){displayNotifications()}, 15000));
+//change back to 5000 after testing
+$(setInterval(function(){displayNotifications()}, 5000));
 
 //TODO: format each type of notification for a specific output.  The one above
 //is for event notifications.  CSS can spruce up divs with the .notification class.
