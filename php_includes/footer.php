@@ -1,3 +1,3 @@
 <div id="footer">
-	<a href="#">About</a>
+	<a href="about.php">About</a>
 </div>

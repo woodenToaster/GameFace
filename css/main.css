@@ -1,6 +1,6 @@
 body {
 	margin:0px;
-	padding:75px 0px 0px 0px;
+	padding:0px 10em 0px 0px;
 //	overflow:hidden;
 //	background-color: #808080;
 	background:url("../img/background.png");
@@ -9,6 +9,7 @@ body {
 	overflow-y: scroll;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size:10pt;
+	color: #FFFFFF;
 }
 
 
@@ -28,28 +29,55 @@ body {
 }
 
 #wrapper {
-	width:70%;
+	width:95em;
 	height:10000;
-	background-color:#000000;
-	border-radius:50px;
+	background-color:rgba(0,0,0, .8);
+	//border-radius:50px;
 	margin-left:auto;
 	margin-right:auto;
-	bottom:50px;
-	border-left:1px solid #CCC;
-	border-right:1px solid #CCC;
+	margin-top: 10em;
+	margin-bottom:50px;
+	padding:10px;
+	//border-left:1px solid #CCC;
+	//border-right:1px solid #CCC;
 }
 
 #wrapper2 {
-	width: 1075px;
-	height:auto;
+	width: 95em;
 	margin-left:auto;
 	margin-right:auto;
 //	border-left:1px solid #CCC;
 //	border-right:1px solid #CCC;
 	background-color:#000000;
-	margin-top:100px;
+	margin-top: 10em;
+}
+#wrapper3 {
+    width: 95em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10em;
+    color: #FFFFFF;
 }
 
+#smallProfile {
+    width: 18%;
+    height: 55em;
+    //border-radius:50px;
+    background-color: rgba(0,0,0, .8);
+    float: left;
+    padding:10px;
+}
+#bigProfile {
+    padding:10px;
+    width: 77%;
+    height:55em;
+    //border-radius:50px;
+    float: right;
+    background-color: rgba(0,0,0, .8);
+}
+
+#wrapper3 h2 { color: #FFFF00; }
+#wrapper3 h3 { color:#FFFF00; }
 #header {
 	position:fixed;
 	top:0px;
@@ -118,11 +146,10 @@ body {
 	margin-top:35px;
 	padding:0px;
 	overflow:auto;
-	border-radius: 50px;
+	//border-radius: 50px;
 }
 
 #sidebar {
-	color:#000000;
 	width:15%;
 	height:100%;
 	float:left;
@@ -130,7 +157,6 @@ body {
 }
 
 #content {
-	color:#000000;
 	width:84%;
 	float:right;
 	height:100%;
@@ -144,17 +170,82 @@ body {
 	bottom: 0px;
 }
 
+#editProfile{
+	width:95em;
+	height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	//border-left:1px solid #CCC;
+	//border-right:1px solid #CCC;
+	padding: 7px 0px 10px 30px;
+}
+
+#uploadscn{
+	width:95em;
+	min-height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+}
+
+#gallery{
+	width:95em;
+	min-height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+}
+
+#image{
+	width:95em;
+	min-height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+}
+
+
 #signup {
 	float:left;
-	padding: 10px 75px 10px 75px;
+	width: 37em;
+//	position: relative;
+	padding: 10px 0px 10px 30px;
 //	padding-left:75px;
 //	padding-right: 75px;
 	color:#FFFFFF;
-	background-color:#000000;
+	background-color: rgba(0,0,0, .8);
 	border-radius: 50px;
-	font-size: 10pt;
 }
-#signin {
+#aboutUs{
+	width:95em;
+	height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	padding: 7px 0px 10px 30px;
+}
+#aboutUs h2 {
+    color:#FFFF00;
+}
+
+#login {
     float: right;
     padding: 15px;
     color: #FFFFFF;
@@ -170,13 +261,26 @@ body {
 
 #info {
 	float:right;
-//	padding-right:75px;
+	width: 50%;
+//	right:200px;
 	color:#FFFFFF;
 	font-size: 10pt;
-//	position:right;
+//	margin:auto;
+//	position:absolute;
+	right:0em;
 }
+
 #signup h2 {
 	color:#FFFF00;
+}
+
+
+#uploadscn h2 {
+	color:#FFFF00;
+}
+
+#editProfile h2 {
+    color: #FFFF00;
 }
 
 #info h2 {
