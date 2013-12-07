@@ -8,9 +8,12 @@
 	      include_once('php_includes/nav.php');
 	      include('php_includes/sessions.php'); 
 	      include('php_includes/profileVal.php'); 
+<<<<<<< HEAD
 	      include('php_includes/addFriend.php');
 	      include('php_includes/removeFriend.php');
 	      include('php_includes/connection.php');
+=======
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 	?>
 
 	<div id="wrapper3">
@@ -21,6 +24,7 @@
 	    <?php echo $major ?><br>
 	    <?php echo $year ?><br>
 	    <?php echo $email ?><br>
+<<<<<<< HEAD
 	    <?php
 	       $usern = $_GET['user'];
  
@@ -67,6 +71,8 @@
 	       mysqli_free_result($result3);
 	       mysqli_close($c3);  
 	    ?>
+=======
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 	  </div>
 	  <div id="bigProfile">
 	    <table width="100%">
@@ -88,6 +94,7 @@
 		</td>
 	      </tr>
 	    </table>
+<<<<<<< HEAD
 	    <table width="100%">
 	      <tr>
 	        <td style="width: 20%;">
@@ -150,3 +157,9 @@
 	</div>
   </body>
 </html>
+=======
+	  </div>
+	</div>
+  </body>
+</html>
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71

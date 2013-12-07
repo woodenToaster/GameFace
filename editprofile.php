@@ -27,6 +27,10 @@
 	    <td>New Email:</td>
 	    <td><input type="text" name="email"></td>
 	    <td><?php echo $emailErr;?></td>
+<<<<<<< HEAD
+=======
+	    <td><a href="#" class="Edit"</td> 
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 	  </tr> 
 	  <tr id="editEmail2" style="display: none;">
 	    <td>Re-Enter Email:</td>

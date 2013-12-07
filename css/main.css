@@ -36,7 +36,11 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	margin-top: 10em;
+<<<<<<< HEAD
 	margin-bottom:50px;
+=======
+	bottom:50px;
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 	padding:10px;
 	//border-left:1px solid #CCC;
 	//border-right:1px solid #CCC;
@@ -56,6 +60,7 @@ body {
     margin-left:auto;
     margin-right:auto;
     margin-top: 10em;
+<<<<<<< HEAD
     color: #FFFFFF;
 }
 
@@ -76,6 +81,28 @@ body {
     background-color: rgba(0,0,0, .8);
 }
 
+=======
+    color: #FFFFFF
+}
+
+#smallProfile {
+    width: 18%;
+    height: 55em;
+    //border-radius:50px;
+    background-color: rgba(0,0,0, .8);
+    float: left;
+    padding:10px;
+}
+#bigProfile {
+    padding:10px;
+    width: 77%;
+    height:55em;
+    //border-radius:50px;
+    float: right;
+    background-color: rgba(0,0,0, .8);
+}
+
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 #wrapper3 h2 { color: #FFFF00; }
 #wrapper3 h3 { color:#FFFF00; }
 #header {
@@ -150,13 +177,45 @@ body {
 }
 
 #sidebar {
+<<<<<<< HEAD
+=======
+	color:#FFFFFF;
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 	width:15%;
 	height:100%;
 	float:left;
 	border-right:1px solid #CCC;
 }
 
+#sidebarLinks {
+	margin-left:40px;
+	margin-right:40px;
+	width:auto;
+	list-style-type:none;
+	padding:3px;
+}
+
+#sidebarLinks a:link,
+#sidebarLinks a:visited {
+	display:block;
+	width:120px;
+	font-weight:bold;
+	color:#FFFF00;
+	background-color:#505050;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+#sidebarLinks a:hover {
+	background-color:#888888;
+}
+
 #content {
+<<<<<<< HEAD
+=======
+	color:#FFFFFF;
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 	width:84%;
 	float:right;
 	height:100%;
@@ -183,6 +242,7 @@ body {
 	padding: 7px 0px 10px 30px;
 }
 
+<<<<<<< HEAD
 #uploadscn{
 	width:95em;
 	min-height:55em;
@@ -220,6 +280,8 @@ body {
 }
 
 
+=======
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 #signup {
 	float:left;
 	width: 37em;
@@ -274,11 +336,14 @@ body {
 	color:#FFFF00;
 }
 
+<<<<<<< HEAD
 
 #uploadscn h2 {
 	color:#FFFF00;
 }
 
+=======
+>>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 #editProfile h2 {
     color: #FFFF00;
 }
@@ -287,6 +352,11 @@ body {
 	color:#FFFF00;
 //	font-size: 15pt;
 }
+
+#notifications {
+	color:#FFFF00;
+}
+
 
 /**** On successful sign up ****/
 
