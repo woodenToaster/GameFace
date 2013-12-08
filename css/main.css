@@ -30,13 +30,13 @@ body {
 
 #wrapper {
 	width:95em;
-	min-height: 55em;
+	min-height: 80em;
 	background-color:rgba(0,0,0, .8);
 	//border-radius:50px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top: 10em;
-	bottom:50px;
+	margin-bottom:10em;
 	padding:10px;
 	//border-left:1px solid #CCC;
 	//border-right:1px solid #CCC;
