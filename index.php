@@ -1,31 +1,17 @@
 <html>
     <head>
-		<?php 
-			include_once('php_includes/header.php');
-			include_once('php_includes/nav.php');
-			include('php_includes/sessions.php'); 
-		?>
         <link href="css/main.css" rel="stylesheet" type="text/css">
-        <title>GameFace: Home</title>
-		<script type="text/javascript" src="js/ajax.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/displayNotifications.js"></script>
+        <title>GameFace</title>
     </head>
     <body>
 		<div id="wrapper">
-<<<<<<< HEAD
 			<?php include_once('php_includes/header.php');
 			      include_once('php_includes/nav.php');
 			      include('php_includes/sessions.php'); ?>
-=======
-			
->>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
-				
-					<div id="notifications"></div>
-					<div id="suggestions"></div>
+					<p>Feed</p>
 				</div>
 			</div>
 		</div>

@@ -17,11 +17,7 @@
 </head>
 <body>
 
-<<<<<<< HEAD
 		<?php include_once("php_includes/header.php"); ?>
-=======
-	<?php include_once("php_includes/header.php"); ?>
->>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 	<div id="wrapper2"> 	
 		<div id="signup">
 			<h2>Sign Up For Free Now!</h2>

@@ -8,12 +8,9 @@
 	      include_once('php_includes/nav.php');
 	      include('php_includes/sessions.php'); 
 	      include('php_includes/profileVal.php'); 
-<<<<<<< HEAD
 	      include('php_includes/addFriend.php');
 	      include('php_includes/removeFriend.php');
 	      include('php_includes/connection.php');
-=======
->>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 	?>
 
 	<div id="wrapper3">
@@ -24,7 +21,6 @@
 	    <?php echo $major ?><br>
 	    <?php echo $year ?><br>
 	    <?php echo $email ?><br>
-<<<<<<< HEAD
 	    <?php
 	       $usern = $_GET['user'];
  
@@ -71,8 +67,6 @@
 	       mysqli_free_result($result3);
 	       mysqli_close($c3);  
 	    ?>
-=======
->>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
 	  </div>
 	  <div id="bigProfile">
 	    <table width="100%">
@@ -94,7 +88,6 @@
 		</td>
 	      </tr>
 	    </table>
-<<<<<<< HEAD
 	    <table width="100%">
 	      <tr>
 	        <td style="width: 20%;">
@@ -134,9 +127,10 @@
 	      $i = 0;
 
 	      while(($pic = mysqli_fetch_array($result4)) && ($i < 5)) {
-                echo "<td style=\"width:20%;\"><img src=\"user_screenshots/" . 
-			$usern . "/" .
-			$pic['data'] . "\" style=\"width:12em;\"><br>";
+                echo '<td style="width:20%;"><a href ="image.php?id=' . 
+			$pic['id'] . '"><img src="user_screenshots/' . 
+			$usern . '/' .
+			$pic['data'] . '" style="width:12em;"></a><br>';
 		echo "<small>" . $pic['gamename'] . "<br>";
 		echo $pic['filename'] . "<br>";
 		echo $pic['description'] . "</small><br></td>";
@@ -157,9 +151,3 @@
 	</div>
   </body>
 </html>
-=======
-	  </div>
-	</div>
-  </body>
-</html>
->>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
