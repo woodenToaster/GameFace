@@ -13,13 +13,10 @@
     </head>
     <body>
 		<div id="wrapper">
-<<<<<<< HEAD
 			<?php include_once('php_includes/header.php');
 			      include_once('php_includes/nav.php');
-			      include('php_includes/sessions.php'); ?>
-=======
-			
->>>>>>> bb8a6eff0131ff270a659ed9343b66bf776ddf71
+			      include('php_includes/sessions.php'); 
+			?>
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
