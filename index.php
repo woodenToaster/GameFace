@@ -7,7 +7,7 @@
 		?>
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <title>GameFace: Home</title>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		
     </head>
     <body>
