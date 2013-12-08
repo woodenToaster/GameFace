@@ -23,24 +23,26 @@
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
-					<h1 style="color: yellow"> Event Calendar </h1>
-						<h2 style="color: yellow; padding-left: 20px"> Created Events </h2>
-
+					<h1 style="color: yellow"> Event Calendar - Created Events </h1>
+						<h5 style="color: yellow; padding-left:20px"><a href="events.php">Create A New Event</a></h5>
 							<?php
 								require_once('php_includes/dbAccess.php');
 								$c = dbConnect();
 								$x = "SELECT * FROM Events";
 								$result = mysqli_query($c,$x);
-								
-								while($row = mysqli_fetch_array($result))
-								{
-									echo $row['eventDate'] . " " . $row['eventTime'] . " " . $row['eventName'];
-									echo "<br>";								
-								}
-							
+
+							    while($row = mysqli_fetch_array($result)) 
+							    {
+							        echo "<td style=\"width:20%;\"><style=\"width:13em;\"><br>";
+							        echo $row['eventDate'] . "<br>";
+							        echo $row['eventTime'] . "<br>" ;
+							        echo $row['eventName'] .  "<br></td>";
+							    }
+						       	
+						    	echo "</table>";
 								mysqli_close($c);
 							?>
-						<h3 style="color: yellow; padding-left:20px"><a href="events.php">Create A New Event</a></h3>		
+								
 					</div>								
 				</div>
 		
