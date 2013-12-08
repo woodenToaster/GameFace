@@ -59,5 +59,6 @@
       ?>
     </table>
   </div>
+   <?php include_once('php_includes/footer.php'); ?>
 </body>
 </html>
