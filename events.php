@@ -24,7 +24,7 @@
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
 					<h1 style="color: yellow"> Event Calendar - Create A New Event</h1>
-						<h5 style="color: yellow; padding-left:20px">Enter information to create a new event, or click here to <a href="calendar.php"> View Created Events</a></h5>	
+						<h5 style="color: grey; padding-left:20px">Enter information to create a new event, or click here to <a href="calendar.php"> View Created Events</a></h5>	
 						
 						<div id="eventLabel" style="color: white; margin-left: 50px; float:left">
 						</br></br>

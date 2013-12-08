@@ -24,7 +24,7 @@
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
 					<h1 style="color: yellow"> Event Calendar - View Created Events </h1>
-						<h5 style="color: yellow; padding-left:20px">Click on an Event to see more about it, or click here to <a href="events.php">Create A New Event</a></h5>						
+						<h5 style="color: grey; padding-left:20px">Click on an Event to see more about it, or click here to <a href="events.php">Create A New Event</a></h5>						
 							<?php
 								require_once('php_includes/dbAccess.php');
 								$c = dbConnect();
