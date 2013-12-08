@@ -1,4 +1,3 @@
-
 body {
 	margin:0px;
 	padding:0px 10em 0px 0px;
@@ -297,15 +296,6 @@ body {
 	font-size:14px;
 	border-style:double;
 	border-color:#FFFF00;
-}
-
-.notification a:hover {
-	color:#0000FF;
-}
-
-.notification a:visited,
-.notification a:link {
-	color:#FFFF00;
 }
 
 #suggestions {
