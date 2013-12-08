@@ -282,6 +282,15 @@ body {
 //	font-size: 15pt;
 }
 
+#headings {
+	color:#FFFF00;
+}
+
+#headings td {
+	margin:auto;
+	width:200em;
+	text-align:center;
+}
 #notifications {
 	float:left;
 	width:37em;

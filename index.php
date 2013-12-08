@@ -17,7 +17,12 @@
                         <div id="view">
                                 <?php include_once('php_includes/sidebar.php'); ?>
                                 <div id="content">
-                                
+													<table id="headings">
+														<tr>
+															<td><h2>Notifications</h2></td>
+															<td><h2>Suggestions</h2></td>
+														</tr>
+													</table>
                                         <div id="notifications"></div>
                                         
                                         <div id="suggestions">
