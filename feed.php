@@ -15,5 +15,10 @@
 		$i++;
 	}
 	echo json_encode($results);
+	//Now we need to set the 'displayed' value of the displayed 
+	//notifications to 'true' so they will only appear once.
+	$q = "UPDATE Notifications SET displayed='true' WHERE toUser='$uname'";
+	$sql = mysqli_query($c, $q);
+	
 	mysqli_close($c);
 ?>

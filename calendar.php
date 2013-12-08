@@ -23,24 +23,33 @@
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
-					<h1 style="color: yellow"> Event Calendar </h1>
-						<h2 style="color: yellow; padding-left: 20px"> Created Events </h2>
-
+					<h1 style="color: yellow"> Event Calendar - Created Events </h1>
+						<h5 style="color: yellow; padding-left:20px"><a href="events.php">Create A New Event</a></h5>	
 							<?php
 								require_once('php_includes/dbAccess.php');
 								$c = dbConnect();
-								$x = "SELECT * FROM Events";
+								$x = "SELECT * FROM Events ORDER BY eventDate, eventTime";
 								$result = mysqli_query($c,$x);
-								
-								while($row = mysqli_fetch_array($result))
-								{
-									echo $row['eventDate'] . " " . $row['eventTime'] . " " . $row['eventName'];
-									echo "<br>";								
-								}
-							
+
+								echo "<table width=600 border='1px' bordercolor='grey' cellpadding='5' cellspacing='0'>";
+								echo "<tr bgcolor = 'black'>";
+								echo "<td align = 'center'><strong><font color = 'yellow' size='6'>" . 'Event Name' . "</font></strong></td>";
+								echo "<td align = 'center'><strong><font color = 'yellow' size='6'>" . 'Event Date' . "</font></td>";
+								echo "<td align = 'center'><strong><font color = 'yellow' size='6'>" . 'Event Time' . "</font></td>";
+								echo "</tr>";
+							    while($row = mysqli_fetch_array($result)) 
+							    {
+								echo "<tr bgcolor = 'black'>";
+							        echo "<td align = 'center'><strong><font color = 'yellow' size='3'>" . $row['eventName'] . "</font></strong></td>";
+								echo "<td align = 'center'><strong><font color = 'white' size='3'>" . $row['eventDate'] . "</font></strong></td>";
+							        echo "<td align = 'center'><strong><font color = 'white' size='3'>" . $row['eventTime'] . "</font></strong></td>";
+								echo "</tr>";
+							    }
+						       	
+						    		echo "</table>";
 								mysqli_close($c);
 							?>
-						<h3 style="color: yellow; padding-left:20px"><a href="events.php">Create A New Event</a></h3>		
+								
 					</div>								
 				</div>
 		
