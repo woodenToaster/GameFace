@@ -29,8 +29,7 @@ function displayNotifications() {
 	});
 }
 
-//change back to 5000 after testing
-$(setInterval(function(){displayNotifications()}, 5000));
+$(setInterval(function(){displayNotifications()}, 15000));
 
 //TODO: format each type of notification for a specific output.  The one above
 //is for event notifications.  CSS can spruce up divs with the .notification class.

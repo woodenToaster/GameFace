@@ -188,6 +188,16 @@ body {
 	height:100%;
 }
 
+#content a:link {
+	font-weight:bold;
+}
+#content a:visited {
+	color:#FFFF00;
+}
+
+#content a:hover {
+	color:#0000FF;
+}
 #footer {
 	clear:both;
 	height:33;
@@ -273,12 +283,43 @@ body {
 }
 
 #notifications {
-	color:#FFFF00;
+	float:left;
+	width:37em;
+	position:relative;
 }
 
+.notification {
+	color:#FFFF00;
+	border-radius:10px;
+	padding:30px 10px 30px 10px;
+	margin:10px;
+	background-color:#000000;
+	font-size:14px;
+	border-style:double;
+	border-color:#FFFF00;
+}
+
+#suggestions {
+	padding-right:100px;
+	float:right;
+	width 70%;
+	position:relative;
+	
+}
+
+.suggestion {
+	float:left;
+	color:#FFFF00;
+	border-radius:10px;
+	padding:30px 80px 30px 10px;
+	margin:10px;
+	background-color:#000;
+	font-size:14px;
+	border-style:double;
+	border-color:#FFFF00;
+}
 
 /**** On successful sign up ****/
-
 #success {
 	text-align:center;
 	color:#FFFF00;
@@ -294,6 +335,7 @@ body {
 #success a:hover {
 	color:#FFFFFF
 }
+/**** End on successful sign up ****/
 
 input {
 	width:200px;

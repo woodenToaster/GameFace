@@ -4,13 +4,14 @@
 			include_once('php_includes/header.php');
 			include_once('php_includes/nav.php');
 			include('php_includes/sessions.php'); 
+			require_once('php_includes/defaultDisplay.php');
 		?>
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <title>GameFace: Home</title>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		
+		<script type="text/javascript" src="js/displayNotifications.js"></script>
     </head>
-    <body>
+    <body onload='displayNotifications()'>
 		<div id="wrapper">
 			
 			<div id="view">
@@ -18,8 +19,10 @@
 				<div id="content">
 				
 					<div id="notifications"></div>
-					<script type="text/javascript" src="js/displayNotifications.js"></script>
-					<div id="suggestions"></div>
+					
+					<div id="suggestions">
+						<div class="suggestion">This is a suggestions</div>
+					</div>
 				</div>
 			</div>
 		</div>
