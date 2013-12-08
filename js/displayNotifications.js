@@ -5,9 +5,10 @@ function displayNotifications() {
 	var request = $.ajax({
 		url: "feed.php",
 		//type: "POST";
-		//dataType: "json"
+		dataType: "json"
 	});
 	request.done(function(data) {
+		//$('#notifications').prepend("<div>"+data.length+"</div>");
 		//$('#notifications').prepend("<div>"+data+"</div>");
 		var i;
 		for(i = 0; i < data.length; i++) {
