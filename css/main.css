@@ -190,6 +190,7 @@ body {
 
 #content a:link {
 	font-weight:bold;
+	color:#FFFF00;
 }
 #content a:visited {
 	color:#FFFF00;
@@ -297,15 +298,6 @@ body {
 	font-size:14px;
 	border-style:double;
 	border-color:#FFFF00;
-}
-
-.notification a:hover {
-	color:#0000FF;
-}
-
-.notification a:visited,
-.notification a:link {
-	color:#FFFF00;
 }
 
 #suggestions {
