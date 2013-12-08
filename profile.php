@@ -57,6 +57,15 @@
 		     friend1='".$usern."'";
  	   
 	       $result3 = mysqli_query($c3, $sql3);
+	       $count3 = mysqli_num_rows($result3);
+
+              if(($usern == $self) && ($count3 == 0)) {
+                 echo "You don't have any friends";
+               }
+               else if($count3 == 0) {
+                 echo $usern . "does not have any friends";
+               }
+
 
 	       while($friends = mysqli_fetch_array($result3)){
 	         $friend = $friends['friend2'];
