@@ -79,7 +79,7 @@
 					</div>
 					<script>
 						function homePage(){
-							window.location.assign("http://people.eecs.ku.edu/~rwerner/gameface/newgf/EECS_448_Project/index.php")
+							window.location.assign("./index.php");
 						}
 
 						$('.invitelist').on('click', function(){
