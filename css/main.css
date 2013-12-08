@@ -30,7 +30,7 @@ body {
 
 #wrapper {
 	width:95em;
-	height:10000;
+	min-height: 55em;
 	background-color:rgba(0,0,0, .8);
 	//border-radius:50px;
 	margin-left:auto;
