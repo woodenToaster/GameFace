@@ -170,11 +170,22 @@ body {
 	padding:3px;
 }
 
+#sidebarLinks li {
+	border-style:inset;
+	border-color:#808808;
+	width:120px;
+	padding-top:0px;
+	padding-bottom:px;
+	text-shadow:-1px -1px 0 black;
+	
+}
+
 #sidebarLinks a:link,
 #sidebarLinks a:visited {
 	display:block;
 	width:120px;
 	font-weight:bold;
+	font-size:20px;
 	color:#FFFF00;
 	background-color:#505050;
 	text-align:center;
@@ -359,7 +370,7 @@ body {
 }
 
 .notification {
-	color:#FFFF00;
+	color:white;
 	border-radius:10px;
 	padding:30px 10px 30px 10px;
 	margin:10px;
@@ -378,7 +389,7 @@ body {
 }
 
 .suggestion {
-	color:#FFFF00;
+	color:white;
 	border-radius:10px;
 	padding:30px 80px 30px 10px;
 	margin:10px;

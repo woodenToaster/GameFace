@@ -1,5 +1,4 @@
 <div id ="sidebar">
-	<p>Sidebar</p>
 	</br>
 	<?php include_once('searchbar.php');?>
 	<ul id="sidebarLinks" >
