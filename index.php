@@ -18,7 +18,7 @@
 				<div id="content">
 				
 					<div id="notifications"></div>
-					<!--<script type="text/javascript" src="js/displayNotifications.js"></script> -->
+					<script type="text/javascript" src="js/displayNotifications.js"></script>
 					<div id="suggestions"></div>
 				</div>
 			</div>
