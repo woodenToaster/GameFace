@@ -43,7 +43,7 @@
 	     else {
 	       $target = "profilepics/".$friend['username']."/".$friend['pic'];
 	     }
-	     echo '<td style="width:8.75em;"><img src="'.$target.'" style="width:8.73em"></td>';
+	     echo '<td style="width:8.75em;"><a href="profile.php?user=' .$friend['username']. '"><img src="'.$target.'" style="width:8.73em"></td>';
 	     echo '<td style="width:15em;"><a href="profile.php?user='.$friend['username'].
 				'">'.$friend['username'].'</a><br>';
 	     echo $friend['firstName'] . ' ' . $friend['lastName'] . '</td>';
