@@ -16,36 +16,16 @@ function displayNotifications() {
 				if(data[i].displayed == "false") {
 					var notif = "<div class='notification'>" + data[i].fromUser + " has invited you to the event <a href='#'>" + data[i].text + "</a></div>";
 					$('#notifications').prepend(notif);
-					//set displayed to "true" in the database
 				}
 			}
 			else if(data[i].type == "addFriend") {
-			
+				//format for 'addFriend'
 			}
 			else if(data[i].type == "comment") {
-			
+				//format for 'comment'
 			}
 		}
 	});
 }
 
 $(setInterval(function(){displayNotifications()}, 15000));
-
-//TODO: format each type of notification for a specific output.  The one above
-//is for event notifications.  CSS can spruce up divs with the .notification class.
-
-//TODO:  need to iterate through all new notifications at login.  Also, once a
-//notification has been displayed, set a flag so it doesn't get displayed again.
-
-/*
-var i;
-for(i = 0; i < json.length; i++) {
-	var notif = document.getElementById("notifications");
-	//format depending on type
-	//if(json.type == "Invite") {
-		notif.innerHTML += "<div>" + json.fromUser + 
-			" has invited you to the event <a href='#'>" + json.text + 
-			"</a></div>";
-		
-	}
-*/
