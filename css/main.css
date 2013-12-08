@@ -97,6 +97,11 @@ body {
     -webkit-transform: rotate(-10deg);
 }
 
+#editpropic {
+    float: left;
+}
+
+
 #nav {
 	position:fixed;
 	top:1px;
@@ -150,7 +155,7 @@ body {
 
 #sidebar {
 	color:#FFFFFF;
-	width:15%;
+        width:15%;
 	height:100%;
 	float:left;
 	border-right:1px solid #CCC;
@@ -181,7 +186,7 @@ body {
 }
 
 #content {
-	color:#FFFFFF;
+        color:#FFFFFF;
 	width:84%;
 	float:right;
 	height:100%;
@@ -217,6 +222,55 @@ body {
 	//border-left:1px solid #CCC;
 	//border-right:1px solid #CCC;
 	padding: 7px 0px 10px 30px;
+}
+
+#uploadscn{
+	width:95em;
+	min-height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+}
+
+#friendsList{
+	width:95em;
+	min-height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+}
+
+#gallery{
+	width:95em;
+	min-height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+}
+
+#image{
+	width:95em;
+	min-height:60em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+	text-align: center;
 }
 
 #signup {

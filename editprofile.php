@@ -14,7 +14,36 @@
     <div id="editProfile">
     <br>
       <h2>Edit Your Profile</h2>
-      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" name="editaccForm"> 
+      <div id="editpropic">
+	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" enctype="multipart/form-data" name="editpicform">
+	  <table>
+	    <tr>Profile Picture:</tr>
+	    <tr>
+	      <td>
+		<img src="<?php echo $path ?>" style="width:13em;">
+	      </td>
+	      <td>
+		<form method="post" action="editprofile.php">
+		  <input type="submit" name="removepic" style="width:5em;" value="Remove">
+		</form>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>Add Profile Picture:</td>
+	      <td><input type="file" name="profilepic" id="file"></td>
+	    </tr>
+	    <tr>
+	      <td>
+		<input type="submit" name="picsubmit" value="Change Picture">
+	      </td>
+	      <td>
+		<?php echo $Error ?>
+	      </td>
+	    </tr>
+	  </table>
+	</form>
+      </div>
+      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" name="editaccForm">
 	<table width="50%" align="center">
 	  <tr>
 	    <td>Email:</td>
@@ -139,7 +168,6 @@
 	  </tr>	   
 	</table>      
       </form>
-
     </div>
     <?php  include_once('php_includes/footer.php'); ?>
   </body>

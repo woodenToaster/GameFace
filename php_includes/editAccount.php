@@ -15,5 +15,12 @@
   $lastname = $result->lastName;
   $schoolyear = $result->year;
   $major = $result->major;
+  if($result->pic == 'default') {
+    $path = "./img/default.png";
+  }
+  else {
+    $path = "./profilepics/" . $username . "/" . $result->pic;
+  }
+
   mysqli_close($c);
 ?>
