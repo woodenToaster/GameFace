@@ -1,6 +1,8 @@
 <div id ="sidebar">
 	<p>Sidebar</p>
-	<ul id="sidebarLinks">
+	</br>
+	<?php include_once('searchbar.php');?>
+	<ul id="sidebarLinks" >
 		<li><a href="index.php">Feed</a></li>
 		<li><a href="#">Friends</a></li>
 		<li><a href="calendar.php">Events</a></li>
