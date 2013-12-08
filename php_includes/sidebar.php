@@ -1,4 +1,5 @@
 <div id ="sidebar">
+	<p>Sidebar</p>
 	<ul id="sidebarLinks">
 		<li><a href="index.php">Feed</a></li>
 		<li><a href="#">Friends</a></li>
