@@ -17,6 +17,7 @@
 	  <div id="smallProfile">
 	    <h3><?php echo "$firstname $lastname" ?></h3>
 	    <br>
+	    <img src="<?php echo $path ?>" style="width:17em;">
 	    <?php echo $username ?><br>
 	    <?php echo $major ?><br>
 	    <?php echo $year ?><br>
@@ -63,7 +64,7 @@
 		 echo $friend;
 		 echo "\">$friend</a><br>";
 	       }
-			    
+	       echo '<a href="friendsList.php?user=' . $usern . '">See More</a>';
 	       mysqli_free_result($result3);
 	       mysqli_close($c3);  
 	    ?>

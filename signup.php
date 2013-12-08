@@ -21,7 +21,7 @@
 	<div id="wrapper2"> 	
 		<div id="signup">
 			<h2>Sign Up For Free Now!</h2>
-			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="POST" name="signupForm">
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="POST" name="signupForm" enctype="multipart/form-data">
 				<table id="signupTable">
 					<tr><td>Username:</td> <td><input type="text" name="username" value="<?php echo htmlspecialchars($uname);?>"></td><td><?php echo $unameErr;?></td></tr>
 					<tr><td>Email:</td> <td><input type="text" name="email" value="<?php echo htmlspecialchars($email);?>"></td><td><?php echo $emailErr;?></td></tr>
@@ -38,6 +38,7 @@
 					<tr><td>Last Name:</td> <td><input type="text" name="lname" value="<?php echo htmlspecialchars($lname);?>"></td><td><?php echo $lnameErr;?></td></tr>
 					<tr><td>School Year:</td> <td><input type="text" name="year" value="<?php echo htmlspecialchars($year);?>"></td></tr>
 					<tr><td>Major:</td> <td><input type="text" name="major" value="<?php echo htmlspecialchars($major);?>"></td></tr>
+					<tr><td>Picture:</td> <td><input type="file" name="profilepic"></td><td><?php echo $picErr; ?></td>
 					<tr><td></td><td><input type="submit" value="Sign Up" name="signupsubmit"></td></tr>
 				</table>
 			</form>
