@@ -1,4 +1,3 @@
-
 body {
 	margin:0px;
 	padding:0px 10em 0px 0px;
@@ -98,6 +97,11 @@ body {
     -webkit-transform: rotate(-10deg);
 }
 
+#editpropic {
+    float: left;
+}
+
+
 #nav {
 	position:fixed;
 	top:1px;
@@ -151,7 +155,7 @@ body {
 
 #sidebar {
 	color:#FFFFFF;
-	width:15%;
+        width:15%;
 	height:100%;
 	float:left;
 	border-right:1px solid #CCC;
@@ -182,12 +186,23 @@ body {
 }
 
 #content {
-	color:#FFFFFF;
+        color:#FFFFFF;
 	width:84%;
 	float:right;
 	height:100%;
 }
 
+#content a:link {
+	font-weight:bold;
+	color:#FFFF00;
+}
+#content a:visited {
+	color:#FFFF00;
+}
+
+#content a:hover {
+	color:#0000FF;
+}
 #footer {
 	clear:both;
 	height:33;
@@ -207,6 +222,55 @@ body {
 	//border-left:1px solid #CCC;
 	//border-right:1px solid #CCC;
 	padding: 7px 0px 10px 30px;
+}
+
+#uploadscn{
+	width:95em;
+	min-height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+}
+
+#friendsList{
+	width:95em;
+	min-height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+}
+
+#gallery{
+	width:95em;
+	min-height:55em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+}
+
+#image{
+	width:95em;
+	min-height:60em;
+	background-color:rgba(0,0,0, .8);
+	color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	padding: 7px 0px 10px 30px;
+	text-align: center;
 }
 
 #signup {
@@ -272,13 +336,52 @@ body {
 //	font-size: 15pt;
 }
 
-#notifications {
+#headings {
 	color:#FFFF00;
 }
 
+#headings td {
+	margin:auto;
+	width:200em;
+	text-align:center;
+}
+#notifications {
+	float:left;
+	width:37em;
+	position:relative;
+}
+
+.notification {
+	color:#FFFF00;
+	border-radius:10px;
+	padding:30px 10px 30px 10px;
+	margin:10px;
+	background-color:#000000;
+	font-size:14px;
+	border-style:double;
+	border-color:#FFFF00;
+}
+
+#suggestions {
+	padding-right:100px;
+	float:right;
+	width 70%;
+	position:relative;
+	
+}
+
+.suggestion {
+	color:#FFFF00;
+	border-radius:10px;
+	padding:30px 80px 30px 10px;
+	margin:10px;
+	background-color:#000;
+	font-size:14px;
+	border-style:double;
+	border-color:#FFFF00;
+}
 
 /**** On successful sign up ****/
-
 #success {
 	text-align:center;
 	color:#FFFF00;
@@ -294,6 +397,7 @@ body {
 #success a:hover {
 	color:#FFFFFF
 }
+/**** End on successful sign up ****/
 
 input {
 	width:200px;

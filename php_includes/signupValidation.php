@@ -7,13 +7,21 @@
     header("location: index.php");
   }
  
-  global $fnameErr, $lnameErr, $emailErr, $email2Err, $unameErr, $pwErr, $top5Err;
+  global $picErr, $fnameErr, $lnameErr, $emailErr, $email2Err, $unameErr, $pwErr, $top5Err;
   $fname = $lname = $email = $game1 = $game2 = $game3 = $game4 = $game5 = $year = $major = $uname = "";
 
+ 
   $emailval = '/^[A-Za-z0-9._%-]+@ku\.edu/';  
 
   if(isset($_POST['signupsubmit'])) {
     if (!empty($_POST)){
+      $target = "./profilepics/" . $_POST['username'] . "/";
+      if(!file_exists($target)) {
+        mkdir($target);
+        chmod($target, 0777);
+      }
+      $target = $target . basename($_FILES['profilepic']['name']);
+
        $err = false;
        $year = $_POST['year'];
        $major = $_POST['major'];
@@ -55,6 +63,18 @@
          $pwErr = "*required";
 	 $err = true;
        }
+       if(!$_FILES['profilepic']) {
+         $data = 'default';
+       }
+       else {
+         if(!preg_match('/^image\/(pjpeg|gif|png|x-png|jpeg|jpg)/', $_FILES['profilepic']['type'])) {
+	   $picErr = "Images only";
+	   $err = true;
+	 }
+	 else {
+           $data = $_FILES['profilepic']['name'];
+	 }
+       }
        
        if(empty($_POST['username'])) {
 	 $unameErr = "*required";
@@ -82,7 +102,7 @@
 	 $err = true;
        }
   }
-
+ 
   if ($err == false) {
     $x = "INSERT INTO Accounts (username, 
 			        email, 
@@ -95,7 +115,8 @@
 				game4, 
 				game5, 
 				major, 
-				year)
+				year,
+				pic)
 											
 	                VALUES ('$_POST[username]', 
 				'$_POST[email]', 
@@ -108,11 +129,14 @@
 				'$_POST[game4]',
 				'$_POST[game5]',
 				'$_POST[major]',
-				'$_POST[year]')";
+				'$_POST[year]',
+				'$data')";
 							  
     if(!mysqli_query($c, $x)) {
       die('Error: ' . mysqli_error($c));
     }
+    move_uploaded_file($_FILES['profilepic']['tmp_name'], $target);
+    chmod($target, 0777);
 	
     $_SESSION['username'] = $_POST['username'];			
     mysqli_close($c);

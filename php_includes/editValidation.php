@@ -97,4 +97,73 @@
     }
     mysqli_close($c);
   }
+
+  $c2 = mysqli_connect($host, $user, $pw, $db)or die("Cannot connect");
+
+  $Error = "";
+
+  $target = "./profilepics/" . $username . "/";
+  if(!file_exists($target)) {
+    mkdir($target);
+    chmod($target, 0777);
+  }
+  $target = $target . basename($_FILES['profilepic']['name']);
+
+  if(isset($_POST['picsubmit'])) {
+    if($_FILES['profilepic']) {
+      if($_FILES['profilepic']['error'] == 0) {
+        if(!preg_match('/^image\/(pjpeg|gif|png|x-png|jpeg|jpg)/', $_FILES['profilepic']['type'])) {
+	  $Error = "Images only";
+	}
+	else {
+	  if(file_exists($target)) {
+	    $Error = "Please rename file or pick another file";
+	  }
+	  else {
+	    $data = $_FILES['profilepic']['name'];
+	    $sql2 = "UPDATE Accounts SET pic='".$data."' 
+	    	    	    WHERE username='$username'";
+
+	    $result2 = mysqli_query($c2, $sql2);
+
+	    move_uploaded_file($_FILES['profilepic']['tmp_name'], $target);
+
+	    chmod($target, 0777);
+	    if($result2) {
+	      header("location: ./editprofile.php");
+	    }
+	    else {
+	      $Error = "Error in uploading";
+	    }
+	  }
+	}
+      }
+      else {
+        $Error = "No file present";
+      }
+    }
+  }
+  mysqli_close($c2);
+
+  $c3 = mysqli_connect($host, $user, $pw, $db)or die("Cannot connect");  
+  $c4 = mysqli_connect($host, $user, $pw, $db)or die("Cannot connect");
+
+
+  if(isset($_POST['removepic'])) {
+    if(!empty($_POST)) {
+      $target = "./profilepics/" . $username . "/";
+      $sql4 = "SELECT pic FROM Accounts WHERE username='".$username."'";
+      $result4 = mysqli_query($c4, $sql4);
+      $r4 = $result4->fetch_object();
+      $target = $target . $r4->pic;
+      unlink($target);
+      
+      $sql3 = "UPDATE Accounts SET pic='default' 
+	    	    	    WHERE username='".$username."'";
+
+      $result3 = mysqli_query($c3, $sql3);
+    }
+  }
+  mysqli_close($c3);
+  mysqli_close($c4);
 ?>

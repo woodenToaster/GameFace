@@ -27,5 +27,11 @@
     $game3 = $r1->game3;
     $game4 = $r1->game4;
     $game5 = $r1->game5;
+    if($r1->pic == 'default') {
+      $path = "./img/default.png";
+    }
+    else {
+      $path = "./profilepics/" . $user . "/" . $r1->pic;
+    }
   }
 ?>
