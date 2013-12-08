@@ -5,15 +5,26 @@ function displayNotifications() {
 	var request = $.ajax({
 		url: "feed.php",
 		//type: "POST";
-		dataType: "json"
+		//dataType: "json"
 	});
 	request.done(function(data) {
-		$('#notifications').prepend(data);
-		/*
-			$('#notifications').prepend(
-				"<div class='notification'>" + data[0].fromUser + " has invited you to the event <a href='#'>"
-				+ data[0].text + "</a></div>");
-		*/
+		$('#notifications').prepend("<div>"+data+"</div>");
+		var i;
+		/*for(i = 0; i < data.length; i++) {
+			if(data[i].type == "Invite") {
+				if(data[i].displayed == "false") {
+					var notif = "<div class='notification'>" + data[i].fromUser + " has invited you to the event <a href='#'>" + data[i].text + "</a></div>";
+					$('#notifications').prepend(notif);
+					//set displayed to "true" in the database
+				}
+			}
+			else if(data[i].type == "addFriend") {
+			
+			}
+			else if(data[i].type == "comment") {
+			
+			}
+		}*/
 	});
 }
 
