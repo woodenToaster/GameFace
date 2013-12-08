@@ -28,7 +28,7 @@
 							<?php
 								require_once('php_includes/dbAccess.php');
 								$c = dbConnect();
-								$x = "SELECT * FROM Events";
+								$x = "SELECT * FROM Events ORDER BY eventDate, eventTime";
 								$result = mysqli_query($c,$x);
 
 								echo "<table width=600 border='1px' bordercolor='grey' cellpadding='5' cellspacing='0'>";
