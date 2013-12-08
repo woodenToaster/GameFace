@@ -24,12 +24,8 @@
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
 					<h1 style="color: yellow"> Event Calendar </h1>
-						<h2 style="color: yellow"> View Created Events </h2>
 
-						
-						
-						
-						<h2 style="color: yellow"> Create an Event </h2>
+						<h2 style="color: yellow; padding-left: 20px"> Create an Event </h2>
 						
 						<div id="eventLabel" style="color: white; margin-left: 50px; float:left">
 						</br></br>
@@ -104,7 +100,8 @@
 						 
 						</select> </br></br>
 						<input type="submit" value="Create Event">
-
+						
+						<h3 style="color: yellow; padding-left:20px"><a href="calendar.php"> View Created Events </a></h3>	
 						</form>
 					</div>										
 				</div>
