@@ -64,7 +64,7 @@
 		 echo $friend;
 		 echo "\">$friend</a><br>";
 	       }
-	       echo '<a href="friendsList.php?user=' . $usern . '">See More</a>';
+	       echo '<br><a href="friendsList.php?user=' . $usern . '">See More</a>';
 	       mysqli_free_result($result3);
 	       mysqli_close($c3);  
 	    ?>
