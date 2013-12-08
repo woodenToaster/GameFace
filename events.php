@@ -20,90 +20,91 @@
     </head>
     <body>
 		<div id="wrapper">
-			
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
-					<h1 style="color: yellow"> Event Creator </h1>
-					<div id="eventLabel" style="color: white; margin-left: 50px; float:left">
-					</br></br>
-					Event Name: </br></br></br>
-					Description: </br></br></br></br>
-					Event Location: </br></br></br>
-					Event Date: </br></br></br>
-					Event Time: </br></br></br>
+					<h1 style="color: yellow"> Event Calendar </h1>
 
-					</div>
-					<div id="events" style="padding-left: 200px; padding-top: 25px">
-					<form action = "eventPost.php" method = "post" name ="eventForm" onsubmit="return validate()">
-					<input type = "text" name="eventName" placeholder=" enter your event name"> </br></br>
-					<textarea type = "text" name = "eventDescription" cols="26" placeholder=" enter a description (optional)"></textarea></br></br>
-					<input type = "text" name ="eventLocation" placeholder=" enter a location"> </br></br>
-					<input type = "text" name = "eventDate" id = "eventDateId" name = "datepicker" placeholder=" click to select a date"> </br></br>
-					<select type = "text" size="5" name = "eventTime" >
-					  <option value="12:00 PM">12:00 PM</option>
-					  <option value="12:30 PM">12:30 PM</option>
-					  <option value="1:00 PM">1:00 PM</option>
-					  <option value="1:30 PM">1:30 PM</option>
-					  <option value="2:00 PM">2:00 PM</option>
-					  <option value="2:30 PM">2:30 PM</option>
-					  <option value="3:00 PM">3:00 PM</option>
-					  <option value="3:30 PM">3:30 PM</option>
-					  <option value="4:00 PM">4:00 PM</option>
-					  <option value="4:30 PM">4:30 PM</option>
-					  <option value="5:00 PM">5:00 PM</option>
-					  <option value="5:30 PM">5:30 PM</option>
-					  <option value="4:30 PM">4:30 PM</option>
-					  <option value="5:00 PM">5:00 PM</option>
-					  <option value="5:30 PM">5:30 PM</option>
-					  <option value="6:00 PM">6:00 PM</option>
-					  <option value="6:30 P">6:30 PM</option>
-					  <option value="7:00 PM">7:00 PM</option>
-					  <option value="7:30 PM">7:30 PM</option>
-					  <option value="8:00 PM">8:00 PM</option>
-					  <option value="8:30 PM">8:30 PM</option>
-					  <option value="9:00 PM">9:00 PM</option>
-					  <option value="9:30 PM">9:30 PM</option>
-					  <option value="10:00 PM">10:00 PM</option>
-					  <option value="10:30 PM">10:30 PM</option>
-					  <option value="11:00 PM">11:00 PM</option>
-					  <option value="11:30 PM">11:30 PM</option>
-					  <option value="12:00 AM">12:00 AM</option>
-					  <option value="12:30 AM">12:30 AM</option>
-					  <option value="1:00 AM">1:00 AM</option>
-					  <option value="1:30 AM">1:30 AM</option>
-					  <option value="2:00 AM">2:00 AM</option>
-					  <option value="2:30 AM">2:30 AM</option>
-					  <option value="3:00 AM">3:00 AM</option>
-					  <option value="3:30 AM">3:30 AM</option>
-					  <option value="4:00 AM">4:00 AM</option>
-					  <option value="4:30 AM">4:30 AM</option>
-					  <option value="5:00 AM">5:00 AM</option>
-					  <option value="5:30 AM">5:30 AM</option>
-					  <option value="4:30 AM">4:30 AM</option>
-					  <option value="5:00 AM">5:00 AM</option>
-					  <option value="5:30 AM">5:30 AM</option>
-					  <option value="6:00 AM">6:00 AM</option>
-					  <option value="6:30 AM">6:30 AM</option>
-					  <option value="7:00 AM">7:00 AM</option>
-					  <option value="7:30 AM">7:30 AM</option>
-					  <option value="8:00 AM">8:00 AM</option>
-					  <option value="8:30 AM">8:30 AM</option>
-					  <option value="9:00 AM">9:00 AM</option>
-					  <option value="9:30 AM">9:30 AM</option>
-					  <option value="10:00 AM">10:00 AM</option>
-					  <option value="10:30 AM">10:30 AM</option>
-					  <option value="11:00 AM">11:00 AM</option>
-					  <option value="11:30 AM">11:30 AM</option>
-					 
-					</select> </br></br>
-					<input type="submit" value="Create Event">
-
-					</form>
-					
-					</div>
-			</div>
-
+						<h2 style="color: yellow; padding-left: 20px"> Create an Event </h2>
+						
+						<div id="eventLabel" style="color: white; margin-left: 50px; float:left">
+						</br></br>
+						Event Name: </br></br></br>
+						Description: </br></br></br></br>
+						Event Location: </br></br></br>
+						Event Date: </br></br></br>
+						Event Time: </br></br></br>
+						</div>
+						
+						<div id="events" style="padding-left: 200px; padding-top: 25px">
+						<form action = "eventPost.php" method = "post" name ="eventForm" onsubmit="return validate()">
+						<input type = "text" name="eventName" placeholder=" enter your event name"> </br></br>
+						<textarea type = "text" name = "eventDescription" cols="26" placeholder=" enter a description (optional)"></textarea></br></br>
+						<input type = "text" name ="eventLocation" placeholder=" enter a location"> </br></br>
+						<input type = "text" name = "eventDate" id = "eventDateId" name = "datepicker" placeholder=" click to select a date"> </br></br>
+						<select type = "text" size="5" name = "eventTime" >
+						  <option value="12:00 PM">12:00 PM</option>
+						  <option value="12:30 PM">12:30 PM</option>
+						  <option value="1:00 PM">1:00 PM</option>
+						  <option value="1:30 PM">1:30 PM</option>
+						  <option value="2:00 PM">2:00 PM</option>
+						  <option value="2:30 PM">2:30 PM</option>
+						  <option value="3:00 PM">3:00 PM</option>
+						  <option value="3:30 PM">3:30 PM</option>
+						  <option value="4:00 PM">4:00 PM</option>
+						  <option value="4:30 PM">4:30 PM</option>
+						  <option value="5:00 PM">5:00 PM</option>
+						  <option value="5:30 PM">5:30 PM</option>
+						  <option value="4:30 PM">4:30 PM</option>
+						  <option value="5:00 PM">5:00 PM</option>
+						  <option value="5:30 PM">5:30 PM</option>
+						  <option value="6:00 PM">6:00 PM</option>
+						  <option value="6:30 P">6:30 PM</option>
+						  <option value="7:00 PM">7:00 PM</option>
+						  <option value="7:30 PM">7:30 PM</option>
+						  <option value="8:00 PM">8:00 PM</option>
+						  <option value="8:30 PM">8:30 PM</option>
+						  <option value="9:00 PM">9:00 PM</option>
+						  <option value="9:30 PM">9:30 PM</option>
+						  <option value="10:00 PM">10:00 PM</option>
+						  <option value="10:30 PM">10:30 PM</option>
+						  <option value="11:00 PM">11:00 PM</option>
+						  <option value="11:30 PM">11:30 PM</option>
+						  <option value="12:00 AM">12:00 AM</option>
+						  <option value="12:30 AM">12:30 AM</option>
+						  <option value="1:00 AM">1:00 AM</option>
+						  <option value="1:30 AM">1:30 AM</option>
+						  <option value="2:00 AM">2:00 AM</option>
+						  <option value="2:30 AM">2:30 AM</option>
+						  <option value="3:00 AM">3:00 AM</option>
+						  <option value="3:30 AM">3:30 AM</option>
+						  <option value="4:00 AM">4:00 AM</option>
+						  <option value="4:30 AM">4:30 AM</option>
+						  <option value="5:00 AM">5:00 AM</option>
+						  <option value="5:30 AM">5:30 AM</option>
+						  <option value="4:30 AM">4:30 AM</option>
+						  <option value="5:00 AM">5:00 AM</option>
+						  <option value="5:30 AM">5:30 AM</option>
+						  <option value="6:00 AM">6:00 AM</option>
+						  <option value="6:30 AM">6:30 AM</option>
+						  <option value="7:00 AM">7:00 AM</option>
+						  <option value="7:30 AM">7:30 AM</option>
+						  <option value="8:00 AM">8:00 AM</option>
+						  <option value="8:30 AM">8:30 AM</option>
+						  <option value="9:00 AM">9:00 AM</option>
+						  <option value="9:30 AM">9:30 AM</option>
+						  <option value="10:00 AM">10:00 AM</option>
+						  <option value="10:30 AM">10:30 AM</option>
+						  <option value="11:00 AM">11:00 AM</option>
+						  <option value="11:30 AM">11:30 AM</option>
+						 
+						</select> </br></br>
+						<input type="submit" value="Create Event">
+						
+						<h3 style="color: yellow; padding-left:20px"><a href="calendar.php"> View Created Events </a></h3>	
+						</form>
+					</div>										
+				</div>
 		<script>
 		$(function() {
 			$("#eventDateId").datepicker();

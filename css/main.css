@@ -63,7 +63,7 @@ body {
     width: 77%;
     height:55em;
     float: right;
-    background-color: rgba(0,0,0, .8);
+    background-color: rgba(0,0,0, .8); 
 }
 
 #wrapper3 h2 { color: #FFFF00; }
@@ -139,6 +139,7 @@ body {
 }
 
 #sidebar {
+	color:#FFFFFF;
 	width:15%;
 	height:100%;
 	float:left;
@@ -146,6 +147,7 @@ body {
 }
 
 #content {
+	color:#FFFFFF;
 	width:84%;
 	float:right;
 	height:100%;
