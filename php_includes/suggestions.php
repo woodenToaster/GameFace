@@ -8,12 +8,11 @@
 	//get user's top 5
 	$x = "SELECT game1, game2, game3, game4, game5 FROM Accounts WHERE username='$uname'";
 	$result = mysqli_query($c,$x);
-	$results = Array();
-	$results = $result;
-	for($i = 0; $i < $results.length; $i++) {
-		echo "<div class='notification'>".$results[$i]."</div>"; 
+	$row = mysqli_fetch_array($result, MYSQLI_NUM);
+	$length = count($row);
+	for($i = 0; $i < $length; $i++) {
+		echo "<div class='notification'>" . $row[$i] . "</div>"; 
 	}
-	
 	
 	mysqli_close($c);
 	

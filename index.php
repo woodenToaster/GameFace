@@ -20,7 +20,9 @@
                                 
                                         <div id="notifications"></div>
                                         
-                                        <div id="suggestions"></div>
+                                        <div id="suggestions">
+														<?php include_once('php_includes/suggestions.php'); ?>
+													 </div>
                                 </div>
                         </div>
                 </div>
