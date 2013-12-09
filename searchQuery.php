@@ -64,7 +64,7 @@
 					</br></br>
 					<h2> Search Results for <?php echo $search ?> </h2>
 					
-					<div id = "friendslist">
+					<div id = "friendsInvitation">
 						<?php 
 						while($row = mysqli_fetch_array($result1))
 						  {
