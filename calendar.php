@@ -27,9 +27,9 @@
 						<h5 style="color: white; padding-left:20px">Click on an Event to see more about it, or click here to <a href="events.php">Create A New Event</a></h5>						
 							<?php
 								require_once('php_includes/dbAccess.php');
-								$c = dbConnect();
+								$db = dbConnect();
 								$x = "SELECT * FROM Events ORDER BY eventDate, eventTime";
-								$result = mysqli_query($c,$x);
+								$result = mysqli_query($db,$x);
 
 								echo "<table width=600 border='1px' bordercolor='grey' cellpadding='5' cellspacing='0'>";
 								echo "<tr bgcolor = 'black'>";
@@ -53,7 +53,7 @@
 								     echo "</tr>";
 							    }
 						      echo "</table>";
-								mysqli_close($c);
+								mysqli_close($db);
 							?>
 
 
@@ -72,6 +72,7 @@
 							document.getElementById("newDate").innerHTML= datetime;
 							document.getElementById("newDescription").innerHTML = description;
 							document.getElementById("newCreator").innerHTML = creatorstr;
+							document.getElementById("newLocation").innerHTML = location;
 						});
 					</script>
 
@@ -79,6 +80,7 @@
 						<br>
 						<h1 id="newTitle" style="color:yellow; padding-left:10px;"></h1>
 						<h3 id="newDate" style="color:white; padding-left:10px;"></h3>
+						<h3 id="newLocation" style="color:white; padding-left:10px;"></h3>
 						<h4 id="newDescription" style="color:yellow; padding-left:30px;"></h4>
 						<h4 id="newCreator" style="color:white; padding-left:10px;"></h4>
 					</div>
