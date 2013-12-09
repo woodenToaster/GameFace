@@ -14,7 +14,7 @@ function displayNotifications() {
 		for(i = 0; i < data.length; i++) {
 			if(data[i].type == "Invite") {
 				if(data[i].displayed == "false") {
-					var notif = "<div class='notification'>" + data[i].fromUser + " has invited you to the event <a href='#'>" + data[i].text + "</a></div>";
+					var notif = "<div class='notification'>" + data[i].fromUser + " has invited you to the event <a href='./calendar.php'>" + data[i].text + "</a></div>";
 					$('#notifications').prepend(notif);
 				}
 			}
