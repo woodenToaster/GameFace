@@ -1,7 +1,9 @@
+
+<?php
+
 //written by: Katherine
 //tested by: Katherine
 
-<?php
   include('connection.php');
 
   $username = $_SESSION['username'];
