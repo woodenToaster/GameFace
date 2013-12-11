@@ -1,3 +1,5 @@
+//written by: Katherine
+
 <?php
   $table = "Accounts";
 
