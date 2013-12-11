@@ -1,4 +1,6 @@
 <?php
+//written by: Katherine
+//tested by: Katherine
   include("connection.php");
   include("loginValidation.php");
 ?> 
