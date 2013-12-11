@@ -1,6 +1,5 @@
 <?php
 //written by: Katherine
-//tested by: Katherine
 
   session_start();
   $loginErr = "";
