@@ -1,4 +1,7 @@
 <?php
+//written by: Katherine
+//tested by: Katherine
+
   include('connection.php');
 
 if(isset($_POST['removeButton'])) {
