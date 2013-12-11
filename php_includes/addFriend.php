@@ -1,3 +1,6 @@
+//written by: Katherine
+//tested by: Katherine
+
 <?php
   include('connection.php');
  
