@@ -1,4 +1,7 @@
 <?php
+//written by: Katherine
+//tested by: Katherine
+
   session_start();
   include('connection.php');
 
