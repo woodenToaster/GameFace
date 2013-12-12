@@ -1,5 +1,7 @@
 <?php
+//Created by Chris Hogan
 //edited by: Katherine
+//Error validation for creating a new profile.
 
   error_reporting(E_ALL);
   ini_set( 'display_errors','1');
