@@ -1,3 +1,5 @@
+//Created by Chris Hogan
+//We used jQuerty for AJAX instead of these functions.
 function ajaxObj(method, url) {
 	var x = new XMLHttpRequest();
 	x.open(method, url, true);
