@@ -1,3 +1,5 @@
+//Created by Chris Hogan
+
 //This function is called every 15 seconds when the user is
 //logged in and on the home page.  It updates and displays 
 //notifications dynamically.
