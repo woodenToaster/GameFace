@@ -10,6 +10,13 @@
 		<title>GameFace: Home</title>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/displayNotifications.js"></script>
+		<script type="text/javascript">
+			function startTesting() {
+				setInterval(function() {
+					$.get('Test/feedTest.php');
+				}, 4000);
+			}
+		</script>
 	</head>
 	<body onload='displayNotifications()'>
 		<div id="wrapper">
@@ -24,9 +31,9 @@
 						</tr>
 					</table>
 					<div id="notifications">
-						<form action='Test/feedTest.php' type='POST'>
-							<input type='submit' value='Start Testing'>
-						</form>
+						<button onclick="startTesting()">
+							Start Testing
+						</button>
 					</div>
 						
 					<div id="suggestions">

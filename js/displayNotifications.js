@@ -28,4 +28,4 @@ function displayNotifications() {
 	});
 }
 
-$(setInterval(function(){displayNotifications()}, 15000));
+$(setInterval(function(){displayNotifications()}, 5000));
