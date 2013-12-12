@@ -1,4 +1,7 @@
 <?php
+//Created by Chris Hogan
+//Finds all users that have a Top 5 game in common, and 
+//suggests them to the current user as a friend.
 	session_start();
 	error_reporting(E_ALL);
 	ini_set('display_errors','1');
