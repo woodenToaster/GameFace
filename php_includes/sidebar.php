@@ -1,3 +1,5 @@
+<!--Created by Chris Hogan-->
+<!--Encapsulation of the sidebar-->
 <div id ="sidebar">
 	</br>
 	<?php include_once('searchbar.php');?>

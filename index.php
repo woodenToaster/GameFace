@@ -1,3 +1,4 @@
+<!-- Originally created by Chris Hogan.  This is the home view of the user profile -->
 <html>
     <head>
                 <?php

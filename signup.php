@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<!--Created by Chris Hogan-->
 <!-- edited by: Katherine -->
+<!--This page allows the user to create an account, storing the info in the database.-->
 <html>
 <head>
 	<link href="css/main.css" rel="stylesheet" type="text/css">

@@ -1,3 +1,18 @@
+TESTING FOR SIGN IN FORM:
 terminal:
 cd ~/EECS_448_Project/Test
 php test2.php
+===============================================
+Instructions for testing the feed:
+
+1.  Go to the following url:
+
+    http://people.eecs.ku.edu/~chogan/Test
+
+2.  Create a profile or sign in to your account.
+
+3.  Go to the home screen, and click the "Start Testing" button.
+
+    This will cause a JavaScript function to add a notification to the database every few seconds.  
+    When the notifications are displayed, you should see new invitations to the event called "Test."
+     
