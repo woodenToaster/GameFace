@@ -65,7 +65,7 @@
          $pwErr = "*required";
 	 $err = true;
        }
-       if(!$_FILES['profilepic']) {
+       if(!$_FILES['profilepic']['error'] != 0) {
          $data = 'default';
        }
        else {
