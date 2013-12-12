@@ -1,1 +1,3 @@
-This will be a decscription about how to run unit tests
+terminal:
+cd ~/EECS_448_Project/Test
+php test2.php
