@@ -1,4 +1,6 @@
 <?php
+//written by: Katherine
+
   include('connection.php');
 
   $commid = $_POST['commid'];

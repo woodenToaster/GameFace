@@ -1,4 +1,6 @@
 <?php
+//written by: Katherine
+
   session_start();
   include("connection.php");  
   $self = $_SESSION['username'];

@@ -1,4 +1,7 @@
+
 <?php
+//written by: Katherine
+
   $table = "Accounts";
 
   $host = "mysql.eecs.ku.edu";

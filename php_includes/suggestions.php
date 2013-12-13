@@ -1,4 +1,7 @@
 <?php
+//Created by Chris Hogan
+//Finds all users that have a Top 5 game in common, and 
+//suggests them to the current user as a friend.
 	session_start();
 	error_reporting(E_ALL);
 	ini_set('display_errors','1');
@@ -10,7 +13,6 @@
 	$result = mysqli_query($c,$x);
 	$row = mysqli_fetch_array($result, MYSQLI_NUM);
 	$length = count($row);
-	
 	//find users to suggest as friends based on top 5
 	for($i = 0; $i < $length; $i++) {
 		$x2 = "SELECT * FROM Accounts WHERE 
@@ -22,11 +24,13 @@
 				AND (username<>'$uname')";
 				
 		$result2 = mysqli_query($c, $x2);
+		
 		while($row2 = mysqli_fetch_assoc($result2)) {
 			echo "<div class='suggestion'><a href='profile.php?user="
 					. $row2['username']. "'>".$row2['username']."</a> also likes " . $row[$i] . "</div>"; 
 		}
 	}
+	
 	mysqli_close($c);
 	
 ?>

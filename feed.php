@@ -1,4 +1,7 @@
 <?php
+//Written by Chris Hogan
+//This file checks the database for notifications and sends them
+//to displayNotifications.js for rendering.
 	session_start();
 	error_reporting(E_ALL);
 	ini_set('display_errors','1');

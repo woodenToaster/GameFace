@@ -1,3 +1,4 @@
+/**Edited by Kyle Heeney, Chris Hogan, Austin Werner, and Katherine Wu**/
 body {
 	margin:0px;
 	padding:0px 10em 0px 0px;
@@ -9,6 +10,7 @@ body {
 	overflow-y: scroll;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size:10pt;
+	color: #FFFFFF;
 }
 
 
@@ -29,13 +31,13 @@ body {
 
 #wrapper {
 	width:95em;
-	height:10000;
+	min-height: 80em;
 	background-color:rgba(0,0,0, .8);
 	//border-radius:50px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top: 10em;
-	bottom:50px;
+	margin-bottom:10em;
 	padding:10px;
 	//border-left:1px solid #CCC;
 	//border-right:1px solid #CCC;
@@ -169,13 +171,24 @@ body {
 	padding:3px;
 }
 
+#sidebarLinks li {
+	border-style:inset;
+	border-color:#808808;
+	width:120px;
+	padding-top:0px;
+	padding-bottom:px;
+	text-shadow:-1px -1px 0 black;
+	
+}
+
 #sidebarLinks a:link,
 #sidebarLinks a:visited {
 	display:block;
 	width:120px;
 	font-weight:bold;
+	font-size:20px;
 	color:#FFFF00;
-	background-color:#505050;
+	background-color:#000000;
 	text-align:center;
 	text-transform:uppercase;
 	text-decoration:none;
@@ -331,11 +344,26 @@ body {
     color: #FFFF00;
 }
 
+#uploadscn h2 {
+    color: #FFFF00;
+}
+#friendsList h2 {
+    color: #FFFF00;
+}
 #info h2 {
 	color:#FFFF00;
 //	font-size: 15pt;
 }
 
+#headings {
+	color:#FFFF00;
+}
+
+#headings td {
+	margin:auto;
+	width:200em;
+	text-align:center;
+}
 #notifications {
 	float:left;
 	width:37em;
@@ -343,7 +371,7 @@ body {
 }
 
 .notification {
-	color:#FFFF00;
+	color:white;
 	border-radius:10px;
 	padding:30px 10px 30px 10px;
 	margin:10px;
@@ -362,7 +390,7 @@ body {
 }
 
 .suggestion {
-	color:#FFFF00;
+	color:white;
 	border-radius:10px;
 	padding:30px 80px 30px 10px;
 	margin:10px;

@@ -64,7 +64,7 @@
 					<h2> Invite Friends to <?php echo $eventName ?> </h2>
 					<h4 style ="color:gray"> Click on the friends you want to invite </h4>
 					
-					<div id = "friendslist">
+					<div id = "friendsInvitations" style="padding-left:30px;">
 						<?php 
 						while($row = mysqli_fetch_array($result))
 						  {

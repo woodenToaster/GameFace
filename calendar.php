@@ -23,13 +23,13 @@
 			<div id="view">
 				<?php include_once('php_includes/sidebar.php'); ?>
 				<div id="content">
-					<h1 style="color: yellow"> Event Calendar - Created Events </h1>
-						<h5 style="color: yellow; padding-left:20px"><a href="events.php">Create A New Event</a></h5>	
+					<h1 style="color: yellow"> Event Calendar - View Created Events </h1>
+						<h5 style="color: white; padding-left:20px">Click on an Event to see more about it, or click here to <a href="events.php">Create A New Event</a></h5>						
 							<?php
 								require_once('php_includes/dbAccess.php');
-								$c = dbConnect();
+								$db = dbConnect();
 								$x = "SELECT * FROM Events ORDER BY eventDate, eventTime";
-								$result = mysqli_query($c,$x);
+								$result = mysqli_query($db,$x);
 
 								echo "<table width=600 border='1px' bordercolor='grey' cellpadding='5' cellspacing='0'>";
 								echo "<tr bgcolor = 'black'>";
@@ -39,18 +39,51 @@
 								echo "</tr>";
 							    while($row = mysqli_fetch_array($result)) 
 							    {
-								echo "<tr bgcolor = 'black'>";
-							        echo "<td align = 'center'><strong><font color = 'yellow' size='3'>" . $row['eventName'] . "</font></strong></td>";
-								echo "<td align = 'center'><strong><font color = 'white' size='3'>" . $row['eventDate'] . "</font></strong></td>";
-							        echo "<td align = 'center'><strong><font color = 'white' size='3'>" . $row['eventTime'] . "</font></strong></td>";
-								echo "</tr>";
+							        $name = $row['eventName'];
+							        $date = $row['eventDate'];
+							        $time = $row['eventTime'];
+							        $location = $row['eventLocation'];
+							        $description = $row['eventDescription'];
+							        $creator = $row['eventCreator'];
+							        
+								     echo "<tr bgcolor = 'black'>";
+							        echo "<td align = 'center' class= 'event' id='".$name."' value='".$location."' title='".$date."' name='".$time."' lang='".$description."' dir='".$creator."'><strong><font color = 'yellow' size='3'>" . $name . "</font></strong></td>";
+									  echo "<td align = 'center'><strong><font color = 'white'  size='3'>" . $date . "</font></strong></td>";
+							        echo "<td align = 'center'><strong><font color = 'white'  size='3'>" . $time . "</font></strong></td>";
+								     echo "</tr>";
 							    }
-						       	
-						    		echo "</table>";
-								mysqli_close($c);
+						      echo "</table>";
+								mysqli_close($db);
 							?>
-								
-					</div>								
+
+
+
+					<script>
+						$('.event').on('click', function(){
+							var name = $(this).attr("id");
+							var location = $(this).attr("value");
+							var date = $(this).attr("title");
+							var time = $(this).attr("name");
+							var datetime = date + " at " + time;
+							var description = $(this).attr("lang");
+							var creator = $(this).attr("dir");
+							var creatorstr = "For more information, please contact the event creator " + creator;
+							document.getElementById("newTitle").innerHTML= name;
+							document.getElementById("newDate").innerHTML= datetime;
+							document.getElementById("newDescription").innerHTML = description;
+							document.getElementById("newCreator").innerHTML = creatorstr;
+							document.getElementById("newLocation").innerHTML = location;
+						});
+					</script>
+
+					<div id="new" style="width:600; background-color:black;">
+						<br>
+						<h1 id="newTitle" style="color:yellow; padding-left:10px;"></h1>
+						<h3 id="newDate" style="color:white; padding-left:10px;"></h3>
+						<h3 id="newLocation" style="color:white; padding-left:10px;"></h3>
+						<h4 id="newDescription" style="color:yellow; padding-left:30px;"></h4>
+						<h4 id="newCreator" style="color:white; padding-left:10px;"></h4>
+					</div>
 				</div>
 		
 		<?php include_once('php_includes/footer.php'); ?>

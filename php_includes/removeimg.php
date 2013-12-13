@@ -1,4 +1,6 @@
 <?php
+//written by: Katherine
+
   include("connection.php");
  
   $c1 = mysqli_connect($host, $user, $pw, $db)or die("Cannot connect");

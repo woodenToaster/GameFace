@@ -1,3 +1,4 @@
+<!--written by: Katherine -->
 <html>
   <head>
     <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -57,6 +58,15 @@
 		     friend1='".$usern."'";
  	   
 	       $result3 = mysqli_query($c3, $sql3);
+	       $count3 = mysqli_num_rows($result3);
+
+              if(($usern == $self) && ($count3 == 0)) {
+                 echo "You don't have any friends";
+               }
+               else if($count3 == 0) {
+                 echo $usern . "does not have any friends";
+               }
+
 
 	       while($friends = mysqli_fetch_array($result3)){
 	         $friend = $friends['friend2'];
@@ -64,7 +74,7 @@
 		 echo $friend;
 		 echo "\">$friend</a><br>";
 	       }
-	       echo '<a href="friendsList.php?user=' . $usern . '">See More</a>';
+	       echo '<br><a href="friendsList.php?user=' . $usern . '">See More</a>';
 	       mysqli_free_result($result3);
 	       mysqli_close($c3);  
 	    ?>
@@ -150,5 +160,6 @@
 	    
 	  </div>
 	</div>
+	<?php include_once('php_includes/footer.php'); ?>
   </body>
 </html>

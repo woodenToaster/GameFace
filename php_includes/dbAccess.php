@@ -1,4 +1,6 @@
 <?php
+//Created by Chris Hogan
+//This function encapsulates the code to connect to the database.
 	function dbConnect() {
 		$hostname = "mysql.eecs.ku.edu";
 		$user = "chogan";

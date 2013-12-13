@@ -1,6 +1,9 @@
+<!--Created by Chris Hogan-->
+<!--Encapsulation of the sidebar-->
 <div id ="sidebar">
-	<p>Sidebar</p>
-	<ul id="sidebarLinks">
+	</br>
+	<?php include_once('searchbar.php');?>
+	<ul id="sidebarLinks" >
 		<li><a href="index.php">Feed</a></li>
 		<li><a href="friendsList.php">Friends</a></li>
 		<li><a href="calendar.php">Events</a></li>

@@ -1,4 +1,6 @@
 <?php
+//written by: Katherine
+
   include('connection.php');
   
   $username = $_SESSION['username'];
