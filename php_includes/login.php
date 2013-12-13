@@ -1,5 +1,5 @@
 <?php
-//written by: Katherine
+//written and tested by: Katherine
 
   include("connection.php");
   include("loginValidation.php");
