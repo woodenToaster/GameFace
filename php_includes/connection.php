@@ -6,7 +6,7 @@
 
   $host = "mysql.eecs.ku.edu";
   $user = "chogan";
-  $pw = "GameFace";
+  $pw = "581!!";
   $db = "chogan";
   $table = "Accounts";
 
